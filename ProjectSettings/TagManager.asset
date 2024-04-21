@@ -3,7 +3,8 @@
 --- !u!78 &1
 TagManager:
   serializedVersion: 2
-  tags: []
+  tags:
+  - pickups
   layers:
   - Default
   - TransparentFX
@@ -38,6 +39,18 @@ TagManager:
   - 
   - 
   m_SortingLayers:
+  - name: water
+    uniqueID: 1880806879
+    locked: 0
   - name: Default
     uniqueID: 0
+    locked: 0
+  - name: grass
+    uniqueID: 3661992905
+    locked: 0
+  - name: Fence
+    uniqueID: 3569206695
+    locked: 0
+  - name: elements
+    uniqueID: 487028175
     locked: 0
