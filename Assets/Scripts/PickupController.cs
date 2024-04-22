@@ -5,6 +5,7 @@ using UnityEngine;
 public class PickupController : MonoBehaviour
 {
     private bool isCollected;
+	private bool isInRange;
 	public bool isFlower;
 
 	public KeyCode pickupKey = KeyCode.E;
@@ -17,30 +18,24 @@ public class PickupController : MonoBehaviour
 
     private void Update()
     {
-        if ((Input.GetKeyDown(pickupKey) || Input.GetButtonDown("PickUp")) && !isCollected)
+        if ((Input.GetKeyDown(pickupKey) || Input.GetButtonDown("PickUp")) && !isCollected && isInRange)
         {
-            TryPickup();
+            isCollected = true;
+			Destroy(gameObject);
+			Debug.Log("Item collected!");
         }
     }
 
-    private void TryPickup()
+	private void OnTriggerEnter2D(Collider2D other)
     {
-        Collider2D[] colliders = Physics2D.OverlapCircleAll(transform.position, 1f);
+        if (other.CompareTag("Player")) {
+			isInRange = true;
+		}
 
-        foreach (Collider2D collider in colliders)
-        {
-            if (collider.CompareTag("pickups") && isFlower)
-            {
-                CollectItem(collider.gameObject);
-                break;
-            }
-        }
     }
 
-    private void CollectItem(GameObject item)
+    private void OnTriggerExit2D(Collider2D other)
     {
-        item.GetComponent<PickupController>().isCollected = true;
-        Destroy(item);
-        Debug.Log("Item collected!");
+        isInRange = false;
     }
 }
