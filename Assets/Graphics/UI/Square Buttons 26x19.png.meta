@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: c1c7b1762d8cb4ccbb170fc78cd77577
+guid: ea6749f53fb4c427f907dbcd0289c129
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -117,13 +117,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Setting menu_0
+      name: Square Buttons 26x19_0
       rect:
         serializedVersion: 2
         x: 11
-        y: 10
-        width: 106
-        height: 122
+        y: 103
+        width: 26
+        height: 19
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +131,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 48be3da4a3d1848e9be794e1a4dc4acc
-      internalID: -1898263415
+      spriteID: bb9701877be704d83a791b0ecb98ec85
+      internalID: -1821726541
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Setting menu_1
+      name: Square Buttons 26x19_1
       rect:
         serializedVersion: 2
-        x: 139
-        y: 10
-        width: 106
-        height: 122
+        x: 59
+        y: 103
+        width: 26
+        height: 18
       alignment: 0
       pivot: {x: 0, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,8 +152,134 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 2c757f239ed2d490ea789565df9ba3c3
-      internalID: 90412312
+      spriteID: e4513dded220c41cb80ef82abe2c222e
+      internalID: -701727761
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_2
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 71
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dcc7db7707032452f9c721eda6b8f1e6
+      internalID: 395289464
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_3
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 71
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dbf9292d6ba5f40d9a09611e8ca9fd45
+      internalID: -2010028918
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_4
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 39
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: a7859080513fa4dc29e7abab1bf4f6bb
+      internalID: 808731364
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_5
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 39
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 57a7ac5c4d39443bfa39c34b0f274475
+      internalID: -231384570
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_6
+      rect:
+        serializedVersion: 2
+        x: 11
+        y: 7
+        width: 26
+        height: 19
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: dd7d67a32cefc48d68dd590a4c508317
+      internalID: -1825697375
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: Square Buttons 26x19_7
+      rect:
+        serializedVersion: 2
+        x: 59
+        y: 7
+        width: 26
+        height: 18
+      alignment: 0
+      pivot: {x: 0, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: 71b47d6c81b864bdd8bd9a7ae1161843
+      internalID: 2018210892
       vertices: []
       indices: 
       edges: []
@@ -169,8 +295,14 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Setting menu_0: -1898263415
-      Setting menu_1: 90412312
+      Square Buttons 26x19_0: -1821726541
+      Square Buttons 26x19_1: -701727761
+      Square Buttons 26x19_2: 395289464
+      Square Buttons 26x19_3: -2010028918
+      Square Buttons 26x19_4: 808731364
+      Square Buttons 26x19_5: -231384570
+      Square Buttons 26x19_6: -1825697375
+      Square Buttons 26x19_7: 2018210892
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
