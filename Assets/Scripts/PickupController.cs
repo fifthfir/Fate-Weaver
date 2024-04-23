@@ -9,6 +9,7 @@ public class PickupController : MonoBehaviour
 	public bool isFlower;
 
 	public KeyCode pickupKey = KeyCode.E;
+	public GameObject pickupEffect;
 
 	// Start is called before the first frame update
     void Start()
@@ -22,6 +23,7 @@ public class PickupController : MonoBehaviour
         {
             isCollected = true;
 			Destroy(gameObject);
+			// Instantiate(pickupEffect, transform.position, transform.rotation);
 			Debug.Log("Item collected!");
         }
     }
