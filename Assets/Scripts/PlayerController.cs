@@ -48,9 +48,15 @@ public class PlayerController : MonoBehaviour
 			if (verticalInput > 0) {
 				moveUp = true;
 				moveDown = false;
+				if (horizontalInput == 0) {
+					theSR.flipX = false;
+				}
 			} else if (verticalInput < 0) {
 				moveUp = false;
 				moveDown = true;
+				if (horizontalInput == 0) {
+					theSR.flipX = false;
+				}
 			} else {
 				moveUp = false;
 				moveDown = false;
