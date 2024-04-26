@@ -1,5 +1,5 @@
 fileFormatVersion: 2
-guid: 3a4c25a1ac97f4285a20721a88ef0073
+guid: 3f2fb7fc3d2414f4b8e7d211ea30e01d
 TextureImporter:
   internalIDToNameTable: []
   externalObjects: {}
@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 16
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -71,18 +71,6 @@ TextureImporter:
     resizeAlgorithm: 0
     textureFormat: -1
     textureCompression: 0
-    compressionQuality: 50
-    crunchedCompression: 0
-    allowsAlphaSplitting: 0
-    overridden: 0
-    androidETC2FallbackOverride: 0
-    forceMaximumCompressionQuality_BC6H_BC7: 0
-  - serializedVersion: 3
-    buildTarget: WebGL
-    maxTextureSize: 2048
-    resizeAlgorithm: 0
-    textureFormat: -1
-    textureCompression: 1
     compressionQuality: 50
     crunchedCompression: 0
     allowsAlphaSplitting: 0
@@ -117,13 +105,13 @@ TextureImporter:
     serializedVersion: 2
     sprites:
     - serializedVersion: 2
-      name: Free Chicken Sprites_0
+      name: walk-back_0
       rect:
         serializedVersion: 2
-        x: 1
-        y: 17
-        width: 11
-        height: 12
+        x: 14
+        y: 2
+        width: 34
+        height: 62
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -131,20 +119,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: d6a99a51274383a4eabcb1a3cd53da07
-      internalID: -76600959
+      spriteID: c749889a24a96294c89f607eb6897d25
+      internalID: -1438774375
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free Chicken Sprites_1
+      name: walk-back_1
       rect:
         serializedVersion: 2
-        x: 17
-        y: 17
-        width: 11
-        height: 12
+        x: 78
+        y: 2
+        width: 35
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -152,20 +140,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: ae1585a05377ba6458ac7bb673bdb188
-      internalID: -406558943
+      spriteID: d526a618aaa9f4046a81cb26f46654f9
+      internalID: 474139346
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free Chicken Sprites_2
+      name: walk-back_2
       rect:
         serializedVersion: 2
-        x: 0
-        y: 1
-        width: 13
-        height: 12
+        x: 142
+        y: 2
+        width: 34
+        height: 62
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -173,20 +161,20 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 27ea847ff94a89c408c60c8e16681c14
-      internalID: -418603780
+      spriteID: b0563635693c3fe448c1b52428f36f2b
+      internalID: -1664756017
       vertices: []
       indices: 
       edges: []
       weights: []
     - serializedVersion: 2
-      name: Free Chicken Sprites_3
+      name: walk-back_3
       rect:
         serializedVersion: 2
-        x: 17
-        y: 1
-        width: 11
-        height: 13
+        x: 205
+        y: 2
+        width: 36
+        height: 60
       alignment: 7
       pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
@@ -194,50 +182,8 @@ TextureImporter:
       physicsShape: []
       tessellationDetail: 0
       bones: []
-      spriteID: 05eacf1caa454ef41b3a778f68cb478c
-      internalID: 1110354913
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Free Chicken Sprites_4
-      rect:
-        serializedVersion: 2
-        x: 32
-        y: 1
-        width: 13
-        height: 12
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 7747eab0f0fe91243932179df4ec760b
-      internalID: -637996492
-      vertices: []
-      indices: 
-      edges: []
-      weights: []
-    - serializedVersion: 2
-      name: Free Chicken Sprites_5
-      rect:
-        serializedVersion: 2
-        x: 49
-        y: 1
-        width: 11
-        height: 13
-      alignment: 7
-      pivot: {x: 0.5, y: 0}
-      border: {x: 0, y: 0, z: 0, w: 0}
-      outline: []
-      physicsShape: []
-      tessellationDetail: 0
-      bones: []
-      spriteID: 1bdfe62f52094f2439d0f3a48b6cd655
-      internalID: -1906022185
+      spriteID: 0899e9b0edd73364faa7e6620e5e2e22
+      internalID: 1365931573
       vertices: []
       indices: 
       edges: []
@@ -253,12 +199,10 @@ TextureImporter:
     weights: []
     secondaryTextures: []
     nameFileIdTable:
-      Free Chicken Sprites_0: -76600959
-      Free Chicken Sprites_1: -406558943
-      Free Chicken Sprites_2: -418603780
-      Free Chicken Sprites_3: 1110354913
-      Free Chicken Sprites_4: -637996492
-      Free Chicken Sprites_5: -1906022185
+      walk-back_0: -1438774375
+      walk-back_1: 474139346
+      walk-back_2: -1664756017
+      walk-back_3: 1365931573
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0

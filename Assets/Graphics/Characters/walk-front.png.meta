@@ -47,7 +47,7 @@ TextureImporter:
   spriteMeshType: 1
   alignment: 0
   spritePivot: {x: 0.5, y: 0.5}
-  spritePixelsToUnits: 200
+  spritePixelsToUnits: 40
   spriteBorder: {x: 0, y: 0, z: 0, w: 0}
   spriteGenerateFallbackPhysicsShape: 1
   alphaUsage: 1
@@ -108,12 +108,12 @@ TextureImporter:
       name: walk-front_0
       rect:
         serializedVersion: 2
-        x: 70
-        y: 5
-        width: 160
-        height: 305
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 14
+        y: 2
+        width: 32
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -129,12 +129,12 @@ TextureImporter:
       name: walk-front_1
       rect:
         serializedVersion: 2
-        x: 390
-        y: 5
-        width: 160
-        height: 310
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 77
+        y: 2
+        width: 34
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -150,12 +150,12 @@ TextureImporter:
       name: walk-front_2
       rect:
         serializedVersion: 2
-        x: 710
-        y: 5
-        width: 160
-        height: 305
-      alignment: 0
-      pivot: {x: 0, y: 0}
+        x: 142
+        y: 2
+        width: 32
+        height: 62
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
       border: {x: 0, y: 0, z: 0, w: 0}
       outline: []
       physicsShape: []
@@ -163,6 +163,27 @@ TextureImporter:
       bones: []
       spriteID: 6befadf3bebe04c4491c27048df662ec
       internalID: -623303079
+      vertices: []
+      indices: 
+      edges: []
+      weights: []
+    - serializedVersion: 2
+      name: walk-front_3
+      rect:
+        serializedVersion: 2
+        x: 205
+        y: 2
+        width: 33
+        height: 60
+      alignment: 7
+      pivot: {x: 0.5, y: 0}
+      border: {x: 0, y: 0, z: 0, w: 0}
+      outline: []
+      physicsShape: []
+      tessellationDetail: 0
+      bones: []
+      spriteID: e586abb3e5973494bb5e7f44b789b1f8
+      internalID: -1504935204
       vertices: []
       indices: 
       edges: []
@@ -181,6 +202,7 @@ TextureImporter:
       walk-front_0: 935766726
       walk-front_1: 329447962
       walk-front_2: -623303079
+      walk-front_3: -1504935204
   spritePackingTag: 
   pSDRemoveMatte: 0
   pSDShowRemoveMatteOption: 0
