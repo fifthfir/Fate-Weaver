@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class TalkButton : MonoBehaviour
 {
-    public GameObject Button;
+    public GameObject talkButton;
+    public GameObject hasTalkedButton;
     public GameObject talkUI;
 
 	public KeyCode talkKey = KeyCode.E;
@@ -13,13 +14,15 @@ public class TalkButton : MonoBehaviour
 
 	void Start()
     {
-		Button.SetActive(false);
+		talkButton.SetActive(false);
+		hasTalkedButton.SetActive(false);
 		talkUI.SetActive(false);
     }
 
 	private void Update()
     {
-        if ((Input.GetKeyDown(talkKey) || Input.GetButtonDown("PickUp")) && Button.activeSelf)
+        if ((Input.GetKeyDown(talkKey) || Input.GetButtonDown("PickUp")) &&
+			(talkButton.activeSelf || hasTalkedButton.activeSelf))
         {
             talkUI.SetActive(true);
         }
@@ -29,14 +32,20 @@ public class TalkButton : MonoBehaviour
     private void OnTriggerEnter2D(Collider2D other)
     {
         if (other.CompareTag("Player")) {
-			Button.SetActive(true);
+			if (!NPCController.instance.hasTalked) {
+				talkButton.SetActive(true);
+			} else {
+				hasTalkedButton.SetActive(true);
+			}
+
 		}
 
     }
 
     private void OnTriggerExit2D(Collider2D other)
     {
-        Button.SetActive(false);
+        talkButton.SetActive(false);
+		hasTalkedButton.SetActive(false);
 		talkUI.SetActive(false);
     }
 }

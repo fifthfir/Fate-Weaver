@@ -24,6 +24,7 @@ public class PickupController : MonoBehaviour
             isCollected = true;
 			Destroy(gameObject);
 			// Instantiate(pickupEffect, transform.position, transform.rotation);
+			AudioManager.instance.PlaySFX(0);
 			Debug.Log("Item collected!");
         }
     }
