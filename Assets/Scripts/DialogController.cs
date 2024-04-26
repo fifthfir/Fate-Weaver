@@ -47,7 +47,7 @@ public class DialogController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-		if (Input.GetKeyDown(talkKey)) {
+		if (Input.GetKeyDown(talkKey) || Input.GetButtonDown("PickUp")) {
 
 			index++;
 
