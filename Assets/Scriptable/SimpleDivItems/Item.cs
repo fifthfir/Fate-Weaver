@@ -13,7 +13,7 @@ public class Item : ScriptableObject
     public string description;
     public Sprite overworldSprite;
     public Sprite icon;
-    public GameObject divResult;
+    public string divResult;
     /* possible properties
     public GameObject divVFX;
     public AudioClip divSFX;

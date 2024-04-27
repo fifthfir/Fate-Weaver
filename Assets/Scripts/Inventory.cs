@@ -16,7 +16,7 @@ public class Inventory : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        
+
     }
 
     /// <summary>
@@ -36,4 +36,19 @@ public class Inventory : MonoBehaviour
         }
         Debug.Log($"{e.itemName}: {InventoryDict[e.itemName]}");
     }
+
+    // TODO maybe use item should be a public function inside the item scriptable
+    public void UseItem(string itemName)
+    {
+        //TODO check cases, item enum to decided what happens when item is useds
+        if (InventoryDict.ContainsKey(itemName))
+        {
+            InventoryDict[itemName] -= 1;
+            if (InventoryDict[itemName] == 0)
+            {
+                //TODO remove item from inventory list (ui hook)
+            }
+        }
+    }
+
 }

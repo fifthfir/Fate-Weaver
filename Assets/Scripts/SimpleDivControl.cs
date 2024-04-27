@@ -4,7 +4,8 @@ using UnityEngine;
 
 public class SimpleDivControl : MonoBehaviour
 {
-    public KeyCode Key;
+    public KeyCode key;
+    public GameObject view;
     // Start is called before the first frame update
     void Start()
     {
@@ -14,10 +15,10 @@ public class SimpleDivControl : MonoBehaviour
     // Update is called once per frame
     void Update()
     {
-        if (Input.GetKeyDown(Key))
+        if (Input.GetKeyDown(key))
         {
             Debug.Log("toggling simple div panel");
-            if (gameObject.activeSelf)
+            if (view.activeSelf)
             {
                 closeSimpleDivPanel();
             }
@@ -32,11 +33,11 @@ public class SimpleDivControl : MonoBehaviour
     // TODO IEnumerator animation/transisition effect
     void openSimpleDivPanel()
     {
-        gameObject.SetActive(true);
+        view.SetActive(true);
     }
 
     void closeSimpleDivPanel()
     {
-        gameObject.SetActive(false);
+        view.SetActive(false);
     }
 }

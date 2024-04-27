@@ -25,6 +25,7 @@ public class PlayerInventory : ScriptableObject
 
         Debug.Log($"{itemName}:{InventoryDict[itemName]}");
     }
+
 }
 
 
