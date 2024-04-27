@@ -7,7 +7,8 @@ public class PickupController : MonoBehaviour
     private bool isCollected;
 	private bool isInRange;
 	public bool isFlower;
-
+    public Item currItem;
+    public PlayerInventory inventory;
 	public KeyCode pickupKey = KeyCode.E;
 	public GameObject pickupEffect;
 
@@ -23,8 +24,10 @@ public class PickupController : MonoBehaviour
         {
             isCollected = true;
 			Destroy(gameObject);
+            //inventory.AddItem(currItem.itemName, currItem);
 			// Instantiate(pickupEffect, transform.position, transform.rotation);
-			Debug.Log("Item collected!");
+			//Debug.Log("Item collected!");
+            EventBus.Publish(new ItemPickUpEvent(currItem.itemName, currItem));
         }
     }
 
@@ -39,5 +42,15 @@ public class PickupController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         isInRange = false;
+    }
+}
+
+public class ItemPickUpEvent{
+    public string itemName;
+    public Item item;
+    public ItemPickUpEvent(string _name, Item _item)
+    {
+        itemName = _name;
+        item = _item;
     }
 }

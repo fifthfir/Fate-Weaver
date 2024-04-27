@@ -5,10 +5,11 @@ using UnityEngine;
 /// <summary>
 /// A SimpleDivObject parent class
 /// </summary>
-[CreateAssetMenu(fileName = "New SimpleDivItem", menuName = "Divination/SimpleDivItem")]
-public class SimpleDivItem : ScriptableObject
+[CreateAssetMenu(fileName = "New Item", menuName = "Collectible/Item")]
+public class Item : ScriptableObject
 {
     public string itemName;
+    public ItemType itemType;
     public string description;
     public Sprite overworldSprite;
     public Sprite icon;
@@ -19,4 +20,11 @@ public class SimpleDivItem : ScriptableObject
     public GameObject collectVFX;
     public AudioClip collectSFX;*/
     /// Add additional properties and methods
+}
+
+public enum ItemType
+{
+    SimpleDivItem,
+    CraftItem
+    //TODO add more
 }

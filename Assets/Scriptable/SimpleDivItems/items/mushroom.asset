@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 35e46307d6e2c4c2181d80e39b0e9823, type: 3}
   m_Name: mushroom
   m_EditorClassIdentifier: 
-  itemName: 
-  description: 
+  itemName: mushroom
+  itemType: 0
+  description: This is a very goood description.
   overworldSprite: {fileID: 0}
-  icon: {fileID: 0}
+  icon: {fileID: 1059501589, guid: 5b5bf145345524b849c6c4cad2eb2d50, type: 3}
   divResult: {fileID: 0}

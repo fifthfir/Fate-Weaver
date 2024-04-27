@@ -101,6 +101,8 @@ MonoBehaviour:
   m_Name: 
   m_EditorClassIdentifier: 
   isFlower: 1
+  currItem: {fileID: 0}
+  inventory: {fileID: 11400000, guid: 4a76f39579e5c45e98fa28fb0a621ed6, type: 2}
   pickupKey: 101
   pickupEffect: {fileID: 0}
 --- !u!50 &116802890745698915
