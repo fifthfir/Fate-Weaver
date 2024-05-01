@@ -6,22 +6,25 @@ using UnityEngine.UI;
 
 public class SimpleDivUI : MonoBehaviour
 {
+    [Header("Public variables (Edit)")]
     public Item item;
     public Inventory inventory;
-    [SerializeField]
-    TextMeshProUGUI TextUI;
-    [SerializeField]
-    int quantity;
-    [SerializeField]
-    bool hasItem = false;
-    [SerializeField]
-    Button curr_button;
     public TextMeshProUGUI resultText;
+
+    [Header("Private variables (Don't Edit)")]
+    [SerializeField]
+    private TextMeshProUGUI quantity_ui;
+    [SerializeField]
+    private int quantity;
+    [SerializeField]
+    private bool hasItem = false;
+    [SerializeField]
+    private Button curr_button;
+
 
     public void Start()
     {
-        TextUI = GetComponentInChildren<TextMeshProUGUI>();
-        //quantity = inventory.InventoryDict[item.itemName];
+        quantity_ui = GetComponentInChildren<TextMeshProUGUI>();
         curr_button = GetComponent<Button>();
     }
 
@@ -40,7 +43,7 @@ public class SimpleDivUI : MonoBehaviour
             }
         }
 
-        TextUI.text = $"x{quantity}";
+        quantity_ui.text = $"x{quantity}";
 
         curr_button.interactable = hasItem;
         

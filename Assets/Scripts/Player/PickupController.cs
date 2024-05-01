@@ -24,10 +24,12 @@ public class PickupController : MonoBehaviour
         {
             isCollected = true;
             Destroy(gameObject);
-            //inventory.AddItem(currItem.itemName, currItem);
-            // Instantiate(pickupEffect, transform.position, transform.rotation);
-            //Debug.Log("Item collected!");
-            EventBus.Publish(new ItemPickUpEvent(currItem.itemName, currItem));
+            //Instantiate(pickupEffect, transform.position, transform.rotation);
+            if (currItem != null)
+            {
+                EventBus.Publish(new ItemPickUpEvent(currItem.itemName, currItem));
+            }
+            //TODO: suggetion: it might help if we put pickup SFX & VFX as public variables of the Item scriptable class 
             AudioManager.instance.PlaySFX(0);
             Debug.Log("Item collected!");
         }

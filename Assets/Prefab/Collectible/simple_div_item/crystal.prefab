@@ -9,19 +9,19 @@ PrefabInstance:
     m_Modifications:
     - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Size.x
-      value: 0.33959314
+      value: 0.27376387
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Size.y
-      value: 0.17674194
+      value: 0.1530844
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Offset.x
-      value: -0.00014576915
+      value: -0.00014590885
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Offset.y
-      value: -0.050134175
+      value: -0.061963025
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698913, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Enabled
@@ -97,7 +97,7 @@ PrefabInstance:
       objectReference: {fileID: 11400000, guid: b1ba9a61d57724e2f9b0a8cb732bffe1, type: 2}
     - target: {fileID: 116802890745698921, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Name
-      value: simple_div_pickup (1)
+      value: crystal
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 116802890745698913, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
