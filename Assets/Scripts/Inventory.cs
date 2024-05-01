@@ -4,6 +4,7 @@ using UnityEngine;
 
 public class Inventory : MonoBehaviour
 {
+    //TODO string => item dictionary
     Subscription <ItemPickUpEvent> item_pick_up_event_subscription;
     public List<Item> itemList = new List<Item>();
     public Dictionary<string, int> InventoryDict = new Dictionary<string, int>();
