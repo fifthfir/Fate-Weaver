@@ -13,7 +13,6 @@ public class DialogController : MonoBehaviour
 
 	public TextAsset textFile;
 	private int index;
-	private PlayerController thePC;
 
 	List<string> textList = new List<string>();
 
@@ -27,6 +26,7 @@ public class DialogController : MonoBehaviour
 
 	private void OnEnable() {
 		PlayerController.instance.stopInput = true;
+		NPCController.instance.stopMoving = true;
 
 		index = 0;
 
@@ -52,6 +52,7 @@ public class DialogController : MonoBehaviour
 			index++;
 
 			if (index >= textList.Count) {
+				NPCController.instance.hasTalked = true;
 				endDialog();
 				return;
 			}
@@ -90,6 +91,8 @@ public class DialogController : MonoBehaviour
 
 	void endDialog() {
 		PlayerController.instance.stopInput = false;
+		NPCController.instance.stopMoving = false;
+
 		gameObject.SetActive(false);
 		index = 0;
 	}
