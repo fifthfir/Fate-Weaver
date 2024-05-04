@@ -33,7 +33,7 @@ public class TrashPilleBigController : MonoBehaviour
         {
             System.Random random = new System.Random();
             int itemIndex = random.Next(0, 4); // generate int from [minValue, maxValue]
-            Instantiate(prefabsToSpawn[itemIndex], transform.position + new Vector3(itemAmount * 0.2f, 0f, 0f), Quaternion.identity);
+            Instantiate(prefabsToSpawn[itemIndex], transform.position + new Vector3(itemAmount * 0.2f, -0.3f, 0f), Quaternion.identity);
 
             itemAmount--;
 
