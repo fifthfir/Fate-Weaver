@@ -35,6 +35,26 @@ MonoBehaviour:
     m_Key: Menu_title
     m_Metadata:
       m_Items: []
+  - m_Id: 36653843025920
+    m_Key: Pause_continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36862702587904
+    m_Key: Pause_quit
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37812225904640
+    m_Key: Pause_Settings
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37968702803968
+    m_Key: Pause_Save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38253433131008
+    m_Key: Pause_Continue
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:

@@ -38,6 +38,26 @@ MonoBehaviour:
     m_Localized: FATE WEAVER
     m_Metadata:
       m_Items: []
+  - m_Id: 36653843025920
+    m_Localized: continue
+    m_Metadata:
+      m_Items: []
+  - m_Id: 36862702587904
+    m_Localized: QUIT
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37812225904640
+    m_Localized: SETTINGS
+    m_Metadata:
+      m_Items: []
+  - m_Id: 37968702803968
+    m_Localized: dk if they can save
+    m_Metadata:
+      m_Items: []
+  - m_Id: 38253433131008
+    m_Localized: CONTINUE
+    m_Metadata:
+      m_Items: []
   references:
     version: 2
     RefIds: []

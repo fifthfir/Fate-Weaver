@@ -21,7 +21,8 @@ public class MainMenu : MonoBehaviour
 
 	public void StartGame()
 	{
-		SceneManager.LoadScene(startScene);
+		// TODO: get to know the language
+        SceneManager.LoadScene(startScene);
 	}
 
 	public void QuitGame()
