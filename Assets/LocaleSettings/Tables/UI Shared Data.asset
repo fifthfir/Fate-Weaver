@@ -31,6 +31,10 @@ MonoBehaviour:
     m_Key: Menu_Language
     m_Metadata:
       m_Items: []
+  - m_Id: 16044417290240
+    m_Key: Menu_title
+    m_Metadata:
+      m_Items: []
   m_Metadata:
     m_Items: []
   m_KeyGenerator:
