@@ -10,6 +10,8 @@ public class AudioManager : MonoBehaviour
 
 	public AudioSource bgm, levelEndMusic;
 
+	Subscription<SimpleDivItemSelectionEvent> simple_div_item_selection_event;
+
 	private void Awake()
 	{
 		instance = this;
@@ -18,6 +20,7 @@ public class AudioManager : MonoBehaviour
 	// Start is called before the first frame update
     void Start()
     {
+		simple_div_item_selection_event = EventBus.Subscribe<SimpleDivItemSelectionEvent>(PlaySelectionSFX);
 
     }
 
@@ -33,4 +36,9 @@ public class AudioManager : MonoBehaviour
 		soundEffects[soundToPlay].pitch = Random.Range(.9f, 1.1f);
 		soundEffects[soundToPlay].Play();
 	}
+
+	void PlaySelectionSFX(SimpleDivItemSelectionEvent e)
+    {
+		PlaySFX(1);
+    }
 }

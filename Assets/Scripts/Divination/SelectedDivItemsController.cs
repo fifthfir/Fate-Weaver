@@ -29,17 +29,17 @@ public class SelectedDivItemsController : MonoBehaviour
         // remove icon
         //
 
-        Debug.Log($"{e.item.itemName} selected for dinivation");
+        Debug.Log($"{e.item.itemName} of {e.item.itemType} selected for dinivation");
         if (e.item.itemType == ItemType.PrimaryDivItem)
         {
-            if (this.transform.childCount < 2) // if primary div item selected for the first time -> spawn in primary icon
+            if (this.transform.childCount == 0) // if primary div item selected for the first time -> spawn in primary icon
             {
                 selectedDivItemIconPrefab.GetComponent<Image>().sprite = e.item.icon;
                 primary_icon = Instantiate(selectedDivItemIconPrefab, this.transform);
                 primary_icon.transform.parent = this.transform;
             }
 
-            else
+            else if(primary_icon != null)
             {
                     primary_icon.GetComponent<Image>().sprite = e.item.icon;
             }
@@ -48,14 +48,14 @@ public class SelectedDivItemsController : MonoBehaviour
       
         else if(e.item.itemType == ItemType.SecondaryDivItem)
         {
-            if(this.transform.childCount < 2)   // if secondary div item selected for the first time -> spawn in secondary icon 
+            if(this.transform.childCount == 1)   // if secondary div item selected for the first time -> spawn in secondary icon 
             {
                 selectedDivItemIconPrefab.GetComponent<Image>().sprite = e.item.icon;
-                primary_icon = Instantiate(selectedDivItemIconPrefab, this.transform);
-                primary_icon.transform.parent = this.transform;
+                secondary_icon = Instantiate(selectedDivItemIconPrefab, this.transform);
+                secondary_icon.transform.parent = this.transform;
             }
 
-            else
+            else if(this.transform.childCount == 2)
             {
                 secondary_icon.GetComponent<Image>().sprite = e.item.icon;
             }

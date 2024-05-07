@@ -7,42 +7,6 @@ PrefabInstance:
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Size.x
-      value: 0.28029746
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Size.y
-      value: 0.18422866
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Offset.x
-      value: -0.023538785
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.1088324
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698913, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Size.x
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698913, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Size.y
-      value: 0.5
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698913, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Offset.x
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698913, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Offset.y
-      value: 0
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698913, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Direction
-      value: 0
-      objectReference: {fileID: 0}
     - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_RootOrder
       value: 0
