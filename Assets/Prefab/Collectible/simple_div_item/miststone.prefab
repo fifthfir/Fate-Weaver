@@ -1,47 +1,39 @@
 %YAML 1.1
 %TAG !u! tag:unity3d.com,2011:
---- !u!1001 &2946202854337777995
+--- !u!1001 &3477645062583514223
 PrefabInstance:
   m_ObjectHideFlags: 0
   serializedVersion: 2
   m_Modification:
     m_TransformParent: {fileID: 0}
     m_Modifications:
-    - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Size.x
-      value: 0.9282382
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Size.y
-      value: 0.4240036
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Offset.x
-      value: 0.0017227691
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698912, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Offset.y
-      value: -0.11724375
-      objectReference: {fileID: 0}
     - target: {fileID: 116802890745698913, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Size.y
-      value: 1.1480407
-      objectReference: {fileID: 0}
-    - target: {fileID: 116802890745698913, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
-      propertyPath: m_Offset.y
-      value: 0.08388442
+      propertyPath: m_Enabled
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_RootOrder
       value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
+      propertyPath: m_LocalScale.x
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
+      propertyPath: m_LocalScale.y
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
+      propertyPath: m_LocalScale.z
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -2.8705366
+      value: -3.35
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -3.0112553
+      value: 1
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -75,21 +67,25 @@ PrefabInstance:
       propertyPath: m_LocalEulerAnglesHint.z
       value: 0
       objectReference: {fileID: 0}
+    - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
+      propertyPath: m_ConstrainProportionsScale
+      value: 1
+      objectReference: {fileID: 0}
     - target: {fileID: 116802890745698917, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: -629441974, guid: 5b5bf145345524b849c6c4cad2eb2d50, type: 3}
+      objectReference: {fileID: 21300000, guid: 540482410860a4d9c88ea44d3b626c79, type: 3}
     - target: {fileID: 116802890745698918, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: divItem
       value: 
-      objectReference: {fileID: 11400000, guid: 0facf4030db9f4a0a974746103027013, type: 2}
+      objectReference: {fileID: 11400000, guid: b1ba9a61d57724e2f9b0a8cb732bffe1, type: 2}
     - target: {fileID: 116802890745698918, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: currItem
       value: 
-      objectReference: {fileID: 11400000, guid: 0facf4030db9f4a0a974746103027013, type: 2}
+      objectReference: {fileID: 11400000, guid: b1ba9a61d57724e2f9b0a8cb732bffe1, type: 2}
     - target: {fileID: 116802890745698921, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Name
-      value: simple_div_pickup (3)
+      value: miststone
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}

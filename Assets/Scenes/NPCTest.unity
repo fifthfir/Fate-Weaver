@@ -17092,7 +17092,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6592730415447287965, guid: 20344aa8aca9d4fdc91d0432edb80065, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UseItem
+      value: SelectItem
       objectReference: {fileID: 0}
     - target: {fileID: 6592730415447287965, guid: 20344aa8aca9d4fdc91d0432edb80065, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -17144,7 +17144,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6592730415716659940, guid: 20344aa8aca9d4fdc91d0432edb80065, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UseItem
+      value: SelectItem
       objectReference: {fileID: 0}
     - target: {fileID: 6592730415716659940, guid: 20344aa8aca9d4fdc91d0432edb80065, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -17252,7 +17252,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6592730416258573108, guid: 20344aa8aca9d4fdc91d0432edb80065, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UseItem
+      value: SelectItem
       objectReference: {fileID: 0}
     - target: {fileID: 6592730416258573108, guid: 20344aa8aca9d4fdc91d0432edb80065, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName
@@ -17396,7 +17396,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 6592730416487744018, guid: 20344aa8aca9d4fdc91d0432edb80065, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_MethodName
-      value: UseItem
+      value: SelectItem
       objectReference: {fileID: 0}
     - target: {fileID: 6592730416487744018, guid: 20344aa8aca9d4fdc91d0432edb80065, type: 3}
       propertyPath: m_OnClick.m_PersistentCalls.m_Calls.Array.data[0].m_TargetAssemblyTypeName

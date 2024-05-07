@@ -11,7 +11,6 @@ public class SimpleDivUI : MonoBehaviour
     public Inventory inventory;
     public TextMeshProUGUI resultText;
     public SimpleDivControl divControl;
-    public bool isPrimaryDivItem;
     public TextMeshProUGUI quantityUI;
 
     [Header("Private variables (Do Not Edit)")]
@@ -54,12 +53,12 @@ public class SimpleDivUI : MonoBehaviour
 
     public void SelectItem()
     {
-        if (isPrimaryDivItem)
+        if (currItem.itemType == ItemType.PrimaryDivItem)
         {
             divControl.primaryDivItem = currItem;
         }
 
-        if (!isPrimaryDivItem)
+        if (currItem.itemType == ItemType.SecondaryDivItem)
         {
             divControl.secondaryDivItem = currItem;
         }

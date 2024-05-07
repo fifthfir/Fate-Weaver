@@ -24,7 +24,8 @@ public class Item : ScriptableObject
 
 public enum ItemType
 {
-    SimpleDivItem,
+    PrimaryDivItem,
+    SecondaryDivItem,
     CraftItem
     //TODO add more
 }

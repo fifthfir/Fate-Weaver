@@ -77,7 +77,7 @@ SpriteRenderer:
   m_SortingLayerID: 487028175
   m_SortingLayer: 3
   m_SortingOrder: 0
-  m_Sprite: {fileID: 1243086470, guid: f7ad05dbfdd8a451a83742252eb0c94b, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 40b445036f52b47a29f659503d13cc12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -102,7 +102,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   isFlower: 1
   currItem: {fileID: 0}
-  inventory: {fileID: 11400000, guid: 4a76f39579e5c45e98fa28fb0a621ed6, type: 2}
   pickupKey: 101
   pickupEffect: {fileID: 0}
 --- !u!50 &116802890745698915
@@ -139,8 +138,8 @@ CapsuleCollider2D:
   m_IsTrigger: 0
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: -0.008319992, y: -0.13732935}
-  m_Size: {x: 0.737421, y: 0.38382983}
+  m_Offset: {x: 0, y: -0.1}
+  m_Size: {x: 0.4, y: 0.2}
   m_Direction: 1
 --- !u!70 &116802890745698913
 CapsuleCollider2D:
@@ -155,6 +154,6 @@ CapsuleCollider2D:
   m_IsTrigger: 1
   m_UsedByEffector: 0
   m_UsedByComposite: 0
-  m_Offset: {x: 0.009868681, y: 0.08388436}
-  m_Size: {x: 1.1480407, y: 1.1480407}
+  m_Offset: {x: 0, y: 0}
+  m_Size: {x: 0.5, y: 0.5}
   m_Direction: 0
