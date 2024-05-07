@@ -35,7 +35,15 @@ public class SelectedDivItemsController : MonoBehaviour
 
     private void Update()
     {
-        
+        if(primary_item == null && secondary_item == null)
+        {
+            this.GetComponent<Button>().interactable = false;
+        }
+
+        else
+        {
+            this.GetComponent<Button>().interactable = true;
+        }
     }
 
     void OnItemSelection(SimpleDivItemSelectionEvent e)
@@ -149,30 +157,31 @@ public class SelectedDivItemsController : MonoBehaviour
         if(primary_item != null)
         {
             player_inventory.UseItem(primary_item.itemName);
-            primary_item = null;
             DestroyImmediate(primary_icon, true);
         }
 
         if(secondary_item != null)
         {
             player_inventory.UseItem(secondary_item.itemName);
-            secondary_item = null;
             DestroyImmediate(secondary_icon, true);
         }
 
-        if (this.transform.childCount == 1)
+        if(primary_item != null && secondary_item == null)
         {
+            Debug.Log($"Simple div with {primary_item} selected");
             divResult.text = primary_item.divResult;
         }
+
         else
         {
-
+            Debug.Log($"Simple div with {primary_item} and {secondary_item} selected");
             divResult.text = " This is a temp placeholder text";
         }
        
        
         StartCoroutine(eraseText(3f));
-
+        primary_item = null;
+        secondary_item = null;
         EventBus.Publish(new DivinationStartsEvent());
     }
 

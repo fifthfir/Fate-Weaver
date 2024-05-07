@@ -16,7 +16,7 @@ MonoBehaviour:
   itemType: 0
   description: 
   overworldSprite: {fileID: 21300000, guid: bd00a82ce265043b0869f3798898e42d, type: 3}
-  icon: {fileID: 0}
+  icon: {fileID: 21300000, guid: bd00a82ce265043b0869f3798898e42d, type: 3}
   divResult: 'Temp: Buff and debuff text'
   associatedDivItems:
   - {fileID: 11400000, guid: 150558fe02ef74d398c874f7861d2fe0, type: 2}
