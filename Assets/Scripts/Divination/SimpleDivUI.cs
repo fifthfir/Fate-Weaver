@@ -7,13 +7,14 @@ using UnityEngine.UI;
 public class SimpleDivUI : MonoBehaviour
 {
     [Header("Public variables (Edit)")]
-    public Item item;
+    public Item currItem;
     public Inventory inventory;
     public TextMeshProUGUI resultText;
+    public SimpleDivControl divControl;
+    public bool isPrimaryDivItem;
+    public TextMeshProUGUI quantityUI;
 
-    [Header("Private variables (Don't Edit)")]
-    [SerializeField]
-    private TextMeshProUGUI quantity_ui;
+    [Header("Private variables (Do Not Edit)")]
     [SerializeField]
     private int quantity;
     [SerializeField]
@@ -24,16 +25,17 @@ public class SimpleDivUI : MonoBehaviour
 
     public void Start()
     {
-        quantity_ui = GetComponentInChildren<TextMeshProUGUI>();
         curr_button = GetComponent<Button>();
+
     }
 
     public void Update()
     {
-        if (inventory.itemList.Contains(item))
+
+        if (inventory.itemList.Contains(currItem))
         {
-            quantity = inventory.InventoryDict[item.itemName];
-            if(quantity > 0)
+
+            if (quantity > 0)
             {
                 hasItem = true;
             }
@@ -41,18 +43,37 @@ public class SimpleDivUI : MonoBehaviour
             {
                 hasItem = false;
             }
+            quantity = inventory.InventoryDict[currItem.itemName];
+            quantityUI.text = $"x{quantity}";
+    
         }
 
-        quantity_ui.text = $"x{quantity}";
-
         curr_button.interactable = hasItem;
-        
+      
+    }
+
+    public void SelectItem()
+    {
+        if (isPrimaryDivItem)
+        {
+            divControl.primaryDivItem = currItem;
+        }
+
+        if (!isPrimaryDivItem)
+        {
+            divControl.secondaryDivItem = currItem;
+        }
+        // publish item selection event
+        EventBus.Publish(new SimpleDivItemSelectionEvent(currItem));
     }
 
     public void UseItem()
     {
-        inventory.UseItem(item.itemName);
-        resultText.text = item.divResult;
+        if (inventory.UseItem(currItem.itemName))
+        {
+            //TODO publish simpleDivitem selected event upon usage for later confirmation
+                resultText.text = currItem.divResult;
+        }
         StopAllCoroutines();
         StartCoroutine(ClearTextAfter(5f));
     }
@@ -63,3 +84,5 @@ public class SimpleDivUI : MonoBehaviour
         resultText.text = "";
     }
 }
+
+

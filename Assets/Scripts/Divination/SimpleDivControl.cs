@@ -6,6 +6,9 @@ public class SimpleDivControl : MonoBehaviour
 {
     public KeyCode key;
     public GameObject view;
+    public GameObject SelectedItemsPanel;
+    public Item primaryDivItem;
+    public Item secondaryDivItem;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +20,7 @@ public class SimpleDivControl : MonoBehaviour
     {
         if (Input.GetKeyDown(key))
         {
-            Debug.Log("toggling simple div panel");
+            //Debug.Log("toggling simple div panel");
             if (view.activeSelf)
             {
                 closeSimpleDivPanel();
