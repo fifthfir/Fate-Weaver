@@ -11,7 +11,8 @@ public class SimpleDivUI : MonoBehaviour
     public Inventory inventory;
     public TextMeshProUGUI resultText;
     public SimpleDivControl divControl;
-    public TextMeshProUGUI quantityUI;
+
+    public bool itemSelected;
 
     [Header("Private variables (Do Not Edit)")]
     [SerializeField]
@@ -20,11 +21,13 @@ public class SimpleDivUI : MonoBehaviour
     private bool hasItem = false;
     [SerializeField]
     private Button curr_button;
-
+    [SerializeField]
+    private TextMeshProUGUI quantity_ui;
 
     public void Start()
     {
         curr_button = GetComponent<Button>();
+        quantity_ui = GetComponentInChildren<TextMeshProUGUI>();
 
     }
 
@@ -43,7 +46,7 @@ public class SimpleDivUI : MonoBehaviour
                 hasItem = false;
             }
             quantity = inventory.InventoryDict[currItem.itemName];
-            quantityUI.text = $"x{quantity}";
+            quantity_ui.text = $"{quantity}";
     
         }
 
@@ -53,17 +56,9 @@ public class SimpleDivUI : MonoBehaviour
 
     public void SelectItem()
     {
-        if (currItem.itemType == ItemType.PrimaryDivItem)
-        {
-            divControl.primaryDivItem = currItem;
-        }
-
-        if (currItem.itemType == ItemType.SecondaryDivItem)
-        {
-            divControl.secondaryDivItem = currItem;
-        }
         // publish item selection event
         EventBus.Publish(new SimpleDivItemSelectionEvent(currItem));
+        //itemSelected = true;
     }
 
     public void UseItem()

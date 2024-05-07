@@ -6,9 +6,7 @@ public class SimpleDivControl : MonoBehaviour
 {
     public KeyCode key;
     public GameObject view;
-    public GameObject SelectedItemsPanel;
-    public Item primaryDivItem;
-    public Item secondaryDivItem;
+    public SelectedDivItemsController divItemsController;
     // Start is called before the first frame update
     void Start()
     {
@@ -41,6 +39,7 @@ public class SimpleDivControl : MonoBehaviour
 
     void closeSimpleDivPanel()
     {
+        divItemsController.ResetSelection();
         view.SetActive(false);
     }
 }

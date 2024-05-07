@@ -14,6 +14,7 @@ public class Item : ScriptableObject
     public Sprite overworldSprite;
     public Sprite icon;
     public string divResult;
+    public List<Item> associatedDivItems;
     /* possible properties
     public GameObject divVFX;
     public AudioClip divSFX;
