@@ -8,7 +8,7 @@ public class TrashPileSmallController : MonoBehaviour
     private bool isInRange;
 
     public Item currItem;
-    public PlayerInventory inventory;
+    public BasicInventory inventory;
     public GameObject[] prefabsToSpawn = new GameObject[4];
 
     public KeyCode pickupKey = KeyCode.E;

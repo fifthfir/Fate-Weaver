@@ -45,11 +45,11 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_LocalPosition.x
-      value: -3.35
+      value: 11.52
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: 1
+      value: 8.51
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -95,9 +95,13 @@ PrefabInstance:
       propertyPath: currItem
       value: 
       objectReference: {fileID: 11400000, guid: b1ba9a61d57724e2f9b0a8cb732bffe1, type: 2}
+    - target: {fileID: 116802890745698918, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
+      propertyPath: inventory
+      value: 
+      objectReference: {fileID: 11400000, guid: 0f485ba87e9474c4e9858b86105de8c2, type: 2}
     - target: {fileID: 116802890745698921, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Name
-      value: crystal
+      value: crystal (1)
       objectReference: {fileID: 0}
     m_RemovedComponents:
     - {fileID: 116802890745698913, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}

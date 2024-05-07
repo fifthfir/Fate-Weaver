@@ -10,8 +10,8 @@ public class TrashPilleBigController : MonoBehaviour
     private int itemAmount;
 
     public Item currItem;
-    public PlayerInventory inventory;
-    public GameObject[] prefabsToSpawn = new GameObject[4];
+    public BasicInventory inventory;
+    public GameObject[] prefabsToSpawn = new GameObject[3];
 
     public KeyCode pickupKey = KeyCode.E;
     public GameObject pickupEffect;
@@ -32,7 +32,7 @@ public class TrashPilleBigController : MonoBehaviour
         if ((Input.GetKeyDown(pickupKey) || Input.GetButtonDown("PickUp")) && !isCollected && isInRange && itemAmount > 0)
         {
             System.Random random = new System.Random();
-            int itemIndex = random.Next(0, 4); // generate int from [minValue, maxValue]
+            int itemIndex = random.Next(0, 3); // generate int from [minValue, maxValue]
             Instantiate(prefabsToSpawn[itemIndex], transform.position + new Vector3(itemAmount * 0.2f, -0.3f, 0f), Quaternion.identity);
 
             itemAmount--;

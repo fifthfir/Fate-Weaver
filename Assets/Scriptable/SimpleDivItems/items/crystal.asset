@@ -14,7 +14,8 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: crystal
   itemType: 0
-  description: This is a very goood description.
+  itemDescription: Cryyyyyyyyyyyystal
   overworldSprite: {fileID: 0}
   icon: {fileID: 21300000, guid: b725cbf217de24f929b12ba18b71c4f1, type: 3}
   divResult: 'Temp: Go up north'
+  collectSFX: 0

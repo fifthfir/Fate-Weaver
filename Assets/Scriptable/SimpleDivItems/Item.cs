@@ -11,7 +11,7 @@ public class Item : ScriptableObject
     public string itemName;
     public ItemType itemType;
     [TextArea]
-    public string description;
+    public string itemDescription;
     public Sprite overworldSprite;
     public Sprite icon;
     public string divResult;

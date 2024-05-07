@@ -7,7 +7,7 @@ public class PickupController : MonoBehaviour
     private bool isCollected;
     private bool isInRange;
     public Item currItem;
-    public PlayerInventory inventory;
+    public BasicInventory inventory;
     public KeyCode pickupKey;
     public GameObject pickupEffect;
 
@@ -25,12 +25,17 @@ public class PickupController : MonoBehaviour
             
             Destroy(gameObject);
             //Instantiate(pickupEffect, transform.position, transform.rotation);
+
             if (currItem != null)
             {
                 EventBus.Publish(new ItemPickUpEvent(currItem.itemName, currItem));
                 
                 //TODO: suggetion: it might help if we put pickup SFX & VFX 
                 //      as public variables of the Item scriptable class 
+
+                // Another inventory logic
+                AddNewItem();
+
                 AudioManager.instance.PlaySFX(currItem.collectSFX);
             }
             Debug.Log("Item collected!");
@@ -49,6 +54,11 @@ public class PickupController : MonoBehaviour
     private void OnTriggerExit2D(Collider2D other)
     {
         isInRange = false;
+    }
+
+    private void AddNewItem() 
+    {
+        inventory.AddItem(currItem);
     }
 }
 

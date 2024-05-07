@@ -31,7 +31,7 @@ public class PlayerController : MonoBehaviour
     // Update is called once per frame
     void Update()
     {	
-		if (!stopInput && !PauseMenu.instance.isPaused) {
+		if (!stopInput && !PauseMenu.instance.isPaused && !ChestController.instance.isOpen) {  
 			OpenInventory();
 
 			if (!myInventory.activeSelf)
