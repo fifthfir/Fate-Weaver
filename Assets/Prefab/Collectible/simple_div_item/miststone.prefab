@@ -78,7 +78,7 @@ PrefabInstance:
     - target: {fileID: 116802890745698918, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: divItem
       value: 
-      objectReference: {fileID: 11400000, guid: b1ba9a61d57724e2f9b0a8cb732bffe1, type: 2}
+      objectReference: {fileID: 0}
     - target: {fileID: 116802890745698918, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: currItem
       value: 

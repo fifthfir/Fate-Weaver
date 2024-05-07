@@ -11,6 +11,7 @@ public class AudioManager : MonoBehaviour
 	public AudioSource bgm, levelEndMusic;
 
 	Subscription<SimpleDivItemSelectionEvent> simple_div_item_selection_event;
+	Subscription<DivinationStartsEvent> divination_starts_event_subscription;
 
 	private void Awake()
 	{
@@ -21,6 +22,7 @@ public class AudioManager : MonoBehaviour
     void Start()
     {
 		simple_div_item_selection_event = EventBus.Subscribe<SimpleDivItemSelectionEvent>(PlaySelectionSFX);
+		divination_starts_event_subscription = EventBus.Subscribe<DivinationStartsEvent>(PlayDivinationSFX);
 
     }
 
@@ -40,5 +42,10 @@ public class AudioManager : MonoBehaviour
 	void PlaySelectionSFX(SimpleDivItemSelectionEvent e)
     {
 		PlaySFX(1);
+    }
+
+	void PlayDivinationSFX(DivinationStartsEvent e)
+    {
+		PlaySFX(2);
     }
 }

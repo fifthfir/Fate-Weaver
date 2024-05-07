@@ -13,9 +13,9 @@ MonoBehaviour:
   m_Name: seed of harvest
   m_EditorClassIdentifier: 
   itemName: seed of harvest
-  itemType: 1
-  description: This is a very good description
-  overworldSprite: {fileID: 0}
-  icon: {fileID: 21300000, guid: 4475397c75d1d460dae95a99adfab2cb, type: 3}
+  itemType: 0
+  description: 
+  overworldSprite: {fileID: 21300000, guid: 4475397c75d1d460dae95a99adfab2cb, type: 3}
+  icon: {fileID: 0}
   divResult: 
   associatedDivItems: []

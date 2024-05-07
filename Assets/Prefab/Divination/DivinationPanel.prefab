@@ -530,7 +530,7 @@ RectTransform:
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
   m_AnchorMin: {x: 0.5, y: 0.5}
   m_AnchorMax: {x: 0.5, y: 0.5}
-  m_AnchoredPosition: {x: -0, y: 176.07}
+  m_AnchoredPosition: {x: -0, y: 187}
   m_SizeDelta: {x: 724.7958, y: 50}
   m_Pivot: {x: 0.5, y: 0.5}
 --- !u!222 &600789341015870283
@@ -3534,7 +3534,19 @@ MonoBehaviour:
   m_TargetGraphic: {fileID: 6496214606427900538}
   m_OnClick:
     m_PersistentCalls:
-      m_Calls: []
+      m_Calls:
+      - m_Target: {fileID: 7893314416820870788}
+        m_TargetAssemblyTypeName: SelectedDivItemsController, Assembly-CSharp
+        m_MethodName: StartsDivination
+        m_Mode: 1
+        m_Arguments:
+          m_ObjectArgument: {fileID: 0}
+          m_ObjectArgumentAssemblyTypeName: UnityEngine.Object, UnityEngine
+          m_IntArgument: 0
+          m_FloatArgument: 0
+          m_StringArgument: 
+          m_BoolArgument: 0
+        m_CallState: 2
 --- !u!114 &5447434135394013835
 MonoBehaviour:
   m_ObjectHideFlags: 0
@@ -3573,11 +3585,13 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   selectedDivItemIconPrefab: {fileID: 768920288942413045, guid: e8e66e7f65a6e4658bff4bc3e0b318bc, type: 3}
   secondaryDivView: {fileID: 4650426695641407831}
+  divResult: {fileID: 5309757711937925317}
   primary_item: {fileID: 0}
   primary_icon: {fileID: 0}
   secondary_item: {fileID: 0}
   secondary_icon: {fileID: 0}
   secondary_buttons: []
+  player_inventory: {fileID: 0}
 --- !u!1 &8970709516221393018
 GameObject:
   m_ObjectHideFlags: 0

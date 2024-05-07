@@ -24,3 +24,8 @@ public class SimpleDivItemSelectionEvent
         item = _item;
     }
 }
+
+public class DivinationStartsEvent
+{
+    public DivinationStartsEvent() { }
+}

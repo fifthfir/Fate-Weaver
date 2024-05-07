@@ -9,7 +9,7 @@ public class SelectedDivItemsController : MonoBehaviour
     Subscription<SimpleDivItemSelectionEvent> simple_div_item_selection_event;
     public GameObject selectedDivItemIconPrefab;
     public GameObject secondaryDivView;
-
+    public TextMeshProUGUI divResult;
 
     [Header("Private Variables")]
     [SerializeField]
@@ -22,11 +22,15 @@ public class SelectedDivItemsController : MonoBehaviour
     private GameObject secondary_icon;
     [SerializeField]
     private Button[] secondary_buttons;
+    [SerializeField]
+    private Inventory player_inventory;
+    
     // Start is called before the first frame update
     void Start()
     {
         simple_div_item_selection_event = EventBus.Subscribe<SimpleDivItemSelectionEvent>(OnItemSelection);
         secondary_buttons = secondaryDivView.GetComponentsInChildren<Button>();
+        player_inventory = FindObjectOfType<Inventory>();
     }
 
     private void Update()
@@ -137,5 +141,44 @@ public class SelectedDivItemsController : MonoBehaviour
         {
             HideSecondaryButtons(button);
         }
+    }
+
+
+    public void StartsDivination()
+    {
+        if(primary_item != null)
+        {
+            player_inventory.UseItem(primary_item.itemName);
+            primary_item = null;
+            DestroyImmediate(primary_icon, true);
+        }
+
+        if(secondary_item != null)
+        {
+            player_inventory.UseItem(secondary_item.itemName);
+            secondary_item = null;
+            DestroyImmediate(secondary_icon, true);
+        }
+
+        if (this.transform.childCount == 1)
+        {
+            divResult.text = primary_item.divResult;
+        }
+        else
+        {
+
+            divResult.text = " This is a temp placeholder text";
+        }
+       
+       
+        StartCoroutine(eraseText(3f));
+
+        EventBus.Publish(new DivinationStartsEvent());
+    }
+
+    IEnumerator eraseText(float duration)
+    {
+        yield return new WaitForSeconds(duration);
+        divResult.text = "";
     }
 }
