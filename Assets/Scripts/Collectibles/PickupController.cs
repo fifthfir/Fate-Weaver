@@ -6,10 +6,9 @@ public class PickupController : MonoBehaviour
 {
     private bool isCollected;
     private bool isInRange;
-    public bool isFlower;
     public Item currItem;
     public PlayerInventory inventory;
-    public KeyCode pickupKey = KeyCode.E;
+    public KeyCode pickupKey;
     public GameObject pickupEffect;
 
     // Start is called before the first frame update
@@ -23,14 +22,17 @@ public class PickupController : MonoBehaviour
         if ((Input.GetKeyDown(pickupKey) || Input.GetButtonDown("PickUp")) && !isCollected && isInRange)
         {
             isCollected = true;
+            
             Destroy(gameObject);
             //Instantiate(pickupEffect, transform.position, transform.rotation);
             if (currItem != null)
             {
                 EventBus.Publish(new ItemPickUpEvent(currItem.itemName, currItem));
+                
+                //TODO: suggetion: it might help if we put pickup SFX & VFX 
+                //      as public variables of the Item scriptable class 
+                AudioManager.instance.PlaySFX(currItem.collectSFX);
             }
-            //TODO: suggetion: it might help if we put pickup SFX & VFX as public variables of the Item scriptable class 
-            AudioManager.instance.PlaySFX(0);
             Debug.Log("Item collected!");
         }
     }

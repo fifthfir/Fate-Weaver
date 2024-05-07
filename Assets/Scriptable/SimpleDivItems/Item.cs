@@ -10,15 +10,18 @@ public class Item : ScriptableObject
 {
     public string itemName;
     public ItemType itemType;
+    [TextArea]
     public string description;
     public Sprite overworldSprite;
     public Sprite icon;
     public string divResult;
+    public int collectSFX;
+    // public AudioClip collectSFX;
     /* possible properties
     public GameObject divVFX;
     public AudioClip divSFX;
     public GameObject collectVFX;
-    public AudioClip collectSFX;*/
+    */
     /// Add additional properties and methods
 }
 
