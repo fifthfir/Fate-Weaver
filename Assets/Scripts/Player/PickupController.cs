@@ -8,7 +8,6 @@ public class PickupController : MonoBehaviour
     private bool isInRange;
     public bool isFlower;
     public Item currItem;
-    public PlayerInventory inventory;
     public KeyCode pickupKey = KeyCode.E;
     public GameObject pickupEffect;
 

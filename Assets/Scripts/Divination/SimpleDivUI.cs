@@ -7,11 +7,12 @@ using UnityEngine.UI;
 public class SimpleDivUI : MonoBehaviour
 {
     [Header("Public variables (Edit)")]
-    public Item item;
+    public Item currItem;
     public Inventory inventory;
     public TextMeshProUGUI resultText;
+    public SimpleDivControl divControl;
 
-    [Header("Private variables (Don't Edit)")]
+    [Header("Private variables (Do Not Edit)")]
     [SerializeField]
     private TextMeshProUGUI quantity_ui;
     [SerializeField]
@@ -21,7 +22,6 @@ public class SimpleDivUI : MonoBehaviour
     [SerializeField]
     private Button curr_button;
 
-
     public void Start()
     {
         quantity_ui = GetComponentInChildren<TextMeshProUGUI>();
@@ -30,10 +30,11 @@ public class SimpleDivUI : MonoBehaviour
 
     public void Update()
     {
-        if (inventory.itemList.Contains(item))
+
+        if (inventory.itemList.Contains(currItem))
         {
-            quantity = inventory.InventoryDict[item.itemName];
-            if(quantity > 0)
+
+            if (quantity > 0)
             {
                 hasItem = true;
             }
@@ -41,18 +42,27 @@ public class SimpleDivUI : MonoBehaviour
             {
                 hasItem = false;
             }
+            quantity = inventory.InventoryDict[currItem.itemName];
+            quantity_ui.text = $"x{quantity}";
+    
         }
 
-        quantity_ui.text = $"x{quantity}";
-
         curr_button.interactable = hasItem;
-        
+      
+    }
+
+    public void SelectItem()
+    {
+        divControl.selected_items.Add(currItem);
     }
 
     public void UseItem()
     {
-        inventory.UseItem(item.itemName);
-        resultText.text = item.divResult;
+        if (inventory.UseItem(currItem.itemName))
+        {
+            //TODO publish simpleDivitem selected event upon usage for later confirmation
+            resultText.text = currItem.divResult;
+        }
         StopAllCoroutines();
         StartCoroutine(ClearTextAfter(5f));
     }
@@ -63,3 +73,5 @@ public class SimpleDivUI : MonoBehaviour
         resultText.text = "";
     }
 }
+
+

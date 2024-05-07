@@ -6,6 +6,8 @@ public class SimpleDivControl : MonoBehaviour
 {
     public KeyCode key;
     public GameObject view;
+    [SerializeField]
+    public List<Item> selected_items;
     // Start is called before the first frame update
     void Start()
     {
@@ -17,7 +19,7 @@ public class SimpleDivControl : MonoBehaviour
     {
         if (Input.GetKeyDown(key))
         {
-            Debug.Log("toggling simple div panel");
+            //Debug.Log("toggling simple div panel");
             if (view.activeSelf)
             {
                 closeSimpleDivPanel();
