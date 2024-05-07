@@ -6,8 +6,9 @@ public class SimpleDivControl : MonoBehaviour
 {
     public KeyCode key;
     public GameObject view;
-    [SerializeField]
-    public List<Item> selected_items;
+    public GameObject SelectedItemsPanel;
+    public Item primaryDivItem;
+    public Item secondaryDivItem;
     // Start is called before the first frame update
     void Start()
     {

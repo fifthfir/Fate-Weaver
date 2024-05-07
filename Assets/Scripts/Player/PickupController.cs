@@ -49,13 +49,3 @@ public class PickupController : MonoBehaviour
     }
 }
 
-public class ItemPickUpEvent
-{
-    public string itemName;
-    public Item item;
-    public ItemPickUpEvent(string _name, Item _item)
-    {
-        itemName = _name;
-        item = _item;
-    }
-}
