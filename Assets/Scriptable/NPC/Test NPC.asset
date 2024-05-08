@@ -12,8 +12,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 8e08167d3ae5542d688d0a96c0d5c203, type: 3}
   m_Name: Test NPC
   m_EditorClassIdentifier: 
-  npcName: 
+  npcName: Chick
+  sigilColor: {r: 1, g: 0.8410583, b: 0.3726415, a: 0}
   npcType: 0
   description: 
-  npcPortrait: {fileID: 0}
+  npcPortrait: {fileID: -406558943, guid: 3a4c25a1ac97f4285a20721a88ef0073, type: 3}
   DialogueSequence: []

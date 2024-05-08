@@ -12,6 +12,9 @@ public class AudioManager : MonoBehaviour
 
 	Subscription<SimpleDivItemSelectionEvent> simple_div_item_selection_event;
 	Subscription<DivinationStartsEvent> divination_starts_event_subscription;
+	Subscription<MiniGamePerfectEvent> mini_game_perfect_event_subscription;
+	Subscription<MiniGameHitEvent> mini_game_hit_event_subscription;
+	Subscription<MiniGameFailEvent> mini_game_fail_event_subscription;
 
 	private void Awake()
 	{
@@ -23,8 +26,10 @@ public class AudioManager : MonoBehaviour
     {
 		simple_div_item_selection_event = EventBus.Subscribe<SimpleDivItemSelectionEvent>(PlaySelectionSFX);
 		divination_starts_event_subscription = EventBus.Subscribe<DivinationStartsEvent>(PlayDivinationSFX);
-
-    }
+		mini_game_perfect_event_subscription = EventBus.Subscribe<MiniGamePerfectEvent>(PlayMiniGamePerfectSFX);
+		mini_game_hit_event_subscription = EventBus.Subscribe<MiniGameHitEvent>(PlayMiniGameHitSFX);
+		mini_game_fail_event_subscription = EventBus.Subscribe<MiniGameFailEvent>(PlayMiniGameFailSFX);
+	}
 
     // Update is called once per frame
     void Update()
@@ -48,4 +53,19 @@ public class AudioManager : MonoBehaviour
     {
 		PlaySFX(2);
     }
+
+	void PlayMiniGamePerfectSFX(MiniGamePerfectEvent e)
+    {
+		PlaySFX(3);
+    }
+
+	void PlayMiniGameHitSFX(MiniGameHitEvent e)
+	{
+		PlaySFX(4);
+	}
+
+	void PlayMiniGameFailSFX(MiniGameFailEvent e)
+	{
+		PlaySFX(5);
+	}
 }
