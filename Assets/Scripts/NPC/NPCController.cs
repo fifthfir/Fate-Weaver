@@ -4,6 +4,8 @@ using UnityEngine;
 
 public class NPCController : MonoBehaviour
 {
+	public NPCProfile npcProfile;
+
     public float moveSpeed;
 
 	public Transform leftPoint, rightPoint;

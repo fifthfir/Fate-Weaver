@@ -8,15 +8,11 @@ public class Inventory : MonoBehaviour
 
     public List<Item> itemList = new List<Item>();
     public Dictionary<string, int> InventoryDict = new Dictionary<string, int>();
-    public GameObject SelectedDivItemsPanel;
-    public GameObject selectedDivIconPrefab;
     // Start is called before the first frame update
     Subscription<ItemPickUpEvent> item_pick_up_event_subscription;
-    Subscription<SimpleDivItemSelectionEvent> simple_div_item_selection_event_subscription;
     void Start()
     {
         item_pick_up_event_subscription = EventBus.Subscribe<ItemPickUpEvent>(OnPickUp);
-        simple_div_item_selection_event_subscription = EventBus.Subscribe<SimpleDivItemSelectionEvent>(OnSimpleDivItemSelection);
     }
 
     /// <summary>
@@ -35,11 +31,6 @@ public class Inventory : MonoBehaviour
             InventoryDict[e.itemName] += 1;
         }
         Debug.Log($"{e.itemName}: {InventoryDict[e.itemName]}");
-    }
-
-    void OnSimpleDivItemSelection(SimpleDivItemSelectionEvent e)
-    {
-        //spawn in simpleDivItem button 
     }
 
     // TODO maybe use item should be a public function inside the item scriptable

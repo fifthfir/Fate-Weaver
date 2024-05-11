@@ -10,11 +10,12 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35e46307d6e2c4c2181d80e39b0e9823, type: 3}
-  m_Name: butterfly
+  m_Name: star shards
   m_EditorClassIdentifier: 
-  itemName: butterfly
-  itemType: 0
-  description: This is a very goood description.
+  itemName: star shards
+  itemType: 1
+  description: 
   overworldSprite: {fileID: 0}
-  icon: {fileID: 21300000, guid: fb3f5f3075c9d4ea39e0b7f0cc81fdb0, type: 3}
-  divResult: 'Temp: It''s a sunny day today'
+  icon: {fileID: 21300000, guid: 392ad84535620408f8c744591427654a, type: 3}
+  divResult: 
+  associatedDivItems: []

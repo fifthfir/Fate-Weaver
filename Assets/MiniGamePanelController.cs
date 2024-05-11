@@ -2,15 +2,16 @@ using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
 
-public class SimpleDivControl : MonoBehaviour
+public class MiniGamePanelController : MonoBehaviour
 {
     public KeyCode key;
     public GameObject view;
-    public SelectedDivItemsController divItemsController;
+    private MiniGameController miniGameController; 
+    
     // Start is called before the first frame update
     void Start()
     {
-        
+        miniGameController = view.GetComponent<MiniGameController>();
     }
 
     // Update is called once per frame
@@ -18,28 +19,27 @@ public class SimpleDivControl : MonoBehaviour
     {
         if (Input.GetKeyDown(key))
         {
-            //Debug.Log("toggling simple div panel");
-            if (view.activeSelf)
+            Debug.Log($"toggling {view.name} ");
+            if (!view.activeSelf)
             {
-                closeSimpleDivPanel();
+                OpenPanel();
             }
 
             else
             {
-                openSimpleDivPanel();
+                ClosePanel();
             }
         }
     }
 
-    // TODO IEnumerator animation/transisition effect
-    void openSimpleDivPanel()
+    void OpenPanel()
     {
         view.SetActive(true);
     }
 
-    void closeSimpleDivPanel()
+    void ClosePanel()
     {
-        divItemsController.ResetSelection();
+        miniGameController.RestGame();
         view.SetActive(false);
     }
 }

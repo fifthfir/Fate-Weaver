@@ -5,10 +5,11 @@ using UnityEngine.UI;
 /// <summary>
 /// A NPC profile parent class
 /// </summary>
-[CreateAssetMenu(fileName = "New NPC", menuName = "NPC")]
+[CreateAssetMenu(fileName = "New NPC Profile", menuName = "NPC/NPCProfile")]
 public class NPCProfile : ScriptableObject
 {
     public string npcName;
+    public Color sigilColor;
     public NPCType npcType;
     public string description;
     public Sprite npcPortrait;

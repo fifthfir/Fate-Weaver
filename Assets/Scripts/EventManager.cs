@@ -24,3 +24,23 @@ public class SimpleDivItemSelectionEvent
         item = _item;
     }
 }
+
+public class DivinationStartsEvent
+{
+    public DivinationStartsEvent() { }
+}
+
+public class MiniGamePerfectEvent
+{
+    public MiniGamePerfectEvent() { }
+}
+
+public class MiniGameHitEvent
+{
+    public MiniGameHitEvent() { }
+}
+
+public class MiniGameFailEvent
+{
+    public MiniGameFailEvent() { }
+}

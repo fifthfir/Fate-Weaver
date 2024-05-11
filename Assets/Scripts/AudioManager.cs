@@ -10,6 +10,12 @@ public class AudioManager : MonoBehaviour
 
 	public AudioSource bgm, levelEndMusic;
 
+	Subscription<SimpleDivItemSelectionEvent> simple_div_item_selection_event;
+	Subscription<DivinationStartsEvent> divination_starts_event_subscription;
+	Subscription<MiniGamePerfectEvent> mini_game_perfect_event_subscription;
+	Subscription<MiniGameHitEvent> mini_game_hit_event_subscription;
+	Subscription<MiniGameFailEvent> mini_game_fail_event_subscription;
+
 	private void Awake()
 	{
 		instance = this;
@@ -18,8 +24,12 @@ public class AudioManager : MonoBehaviour
 	// Start is called before the first frame update
     void Start()
     {
-
-    }
+		simple_div_item_selection_event = EventBus.Subscribe<SimpleDivItemSelectionEvent>(PlaySelectionSFX);
+		divination_starts_event_subscription = EventBus.Subscribe<DivinationStartsEvent>(PlayDivinationSFX);
+		mini_game_perfect_event_subscription = EventBus.Subscribe<MiniGamePerfectEvent>(PlayMiniGamePerfectSFX);
+		mini_game_hit_event_subscription = EventBus.Subscribe<MiniGameHitEvent>(PlayMiniGameHitSFX);
+		mini_game_fail_event_subscription = EventBus.Subscribe<MiniGameFailEvent>(PlayMiniGameFailSFX);
+	}
 
     // Update is called once per frame
     void Update()
@@ -32,5 +42,30 @@ public class AudioManager : MonoBehaviour
 		// soundEffects[soundToPlay].Stop();
 		soundEffects[soundToPlay].pitch = Random.Range(.9f, 1.1f);
 		soundEffects[soundToPlay].Play();
+	}
+
+	void PlaySelectionSFX(SimpleDivItemSelectionEvent e)
+    {
+		PlaySFX(1);
+    }
+
+	void PlayDivinationSFX(DivinationStartsEvent e)
+    {
+		PlaySFX(2);
+    }
+
+	void PlayMiniGamePerfectSFX(MiniGamePerfectEvent e)
+    {
+		PlaySFX(3);
+    }
+
+	void PlayMiniGameHitSFX(MiniGameHitEvent e)
+	{
+		PlaySFX(4);
+	}
+
+	void PlayMiniGameFailSFX(MiniGameFailEvent e)
+	{
+		PlaySFX(5);
 	}
 }
