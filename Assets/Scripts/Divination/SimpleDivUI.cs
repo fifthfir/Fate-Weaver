@@ -8,7 +8,7 @@ public class SimpleDivUI : MonoBehaviour
 {
     [Header("Public variables (Edit)")]
     public Item item;
-    public Inventory inventory;
+    public BasicInventory inventory;
     public TextMeshProUGUI resultText;
 
     [Header("Private variables (Don't Edit)")]
@@ -51,6 +51,7 @@ public class SimpleDivUI : MonoBehaviour
 
     public void UseItem()
     {
+        
         inventory.UseItem(item.itemName);
         resultText.text = item.divResult;
         StopAllCoroutines();

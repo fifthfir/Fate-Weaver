@@ -9,7 +9,7 @@ public class SimpleDivControl : MonoBehaviour
     // Start is called before the first frame update
     void Start()
     {
-        
+        closeSimpleDivPanel();
     }
 
     // Update is called once per frame

@@ -13,10 +13,8 @@ public class BasicInventory : ScriptableObject
 
     public void AddItem(Item item)
     {
-        Debug.Log("Add item");
         if (!itemList.Contains(item) && !InventoryDict.ContainsKey(item.itemName))
         {
-            Debug.Log("Add new");
             itemList.Add(item);
             InventoryDict.Add(item.itemName, 1);
             // InventoryController.CreateNewItem(item);
@@ -24,12 +22,24 @@ public class BasicInventory : ScriptableObject
         else
         {
             InventoryDict[item.itemName] += 1;
-            Debug.Log("Add old");
         }
 
         InventoryController.RefreshItem();
 
         Debug.Log($"{item.itemName}:{InventoryDict[item.itemName]}");
+    }
+    
+    public void UseItem(string itemName)
+    {
+        //TODO check cases, item enum to decided what happens when item is useds
+        if (InventoryDict.ContainsKey(itemName))
+        {
+            InventoryDict[itemName] -= 1;
+            if (InventoryDict[itemName] == 0)
+            {
+                //TODO remove item from inventory list (ui hook)
+            }
+        }
     }
 
 }
