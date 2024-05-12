@@ -8,7 +8,7 @@ public class SimpleDivUI : MonoBehaviour
 {
     [Header("Public variables (Edit)")]
     public Item currItem;
-    public Inventory inventory;
+    public BasicInventory inventory;
     public TextMeshProUGUI resultText;
     public SimpleDivControl divControl;
 

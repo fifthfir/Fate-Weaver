@@ -25,6 +25,7 @@ public class Inventory : MonoBehaviour
         {
             itemList.Add(e.item);
             InventoryDict[e.itemName] = 1;
+            // InventoryController.CreateNewItem(e.item);
         }
         else
         {
