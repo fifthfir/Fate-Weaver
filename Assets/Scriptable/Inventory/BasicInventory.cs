@@ -12,18 +12,20 @@ public class BasicInventory : ScriptableObject
     public Dictionary<string, int> InventoryDict = new Dictionary<string,int>();
 
     [SerializeField]
-    public List<Item> itemNumList = new List<Item>();
+    public List<int> itemNumList = new List<int>();
 
     public void AddItem(Item item)
     {
         if (!itemList.Contains(item))
         {
             itemList.Add(item);
+            itemNumList.Add(1);
         }
         
         if (InventoryDict.ContainsKey(item.itemName))
         {
             InventoryDict[item.itemName] += 1;
+            itemNumList[itemList.IndexOf(item)]++;
         }
         else
         {
