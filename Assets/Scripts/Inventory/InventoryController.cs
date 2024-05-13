@@ -4,7 +4,7 @@ using UnityEngine;
 using UnityEngine.UI;
 
 
-public class InventoryController : MonoBehaviour
+public class InventoryController : MonoBehaviour, IDataPersistence
 {
     static InventoryController instance;
     public BasicInventory inventory;
@@ -34,7 +34,7 @@ public class InventoryController : MonoBehaviour
         newItem.gameObject.transform.SetParent(instance.slotGrid.transform);
         newItem.slotItem = item;
         newItem.slotImage.sprite = item.icon;
-        newItem.slotNum.text = InventoryController.instance.inventory.InventoryDict[item.itemName].ToString();
+        newItem.slotNum.text = instance.inventory.InventoryDict[item.itemName].ToString();
     }
 
     public static void RefreshItem()
@@ -52,5 +52,17 @@ public class InventoryController : MonoBehaviour
         {
             CreateNewItem(instance.inventory.itemList[i]);
         }
+    }
+
+    // TODO
+    public void LoadData(GameData data)
+    {
+        // inventory = data.playerInventory;
+    }
+
+    public void SaveData(ref GameData data)
+    {
+        
+        // data.playerInventory = inventory;
     }
 }

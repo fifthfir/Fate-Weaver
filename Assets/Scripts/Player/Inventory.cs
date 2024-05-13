@@ -8,6 +8,7 @@ public class Inventory : MonoBehaviour
 
     public List<Item> itemList = new List<Item>();
     public Dictionary<string, int> InventoryDict = new Dictionary<string, int>();
+    
     // Start is called before the first frame update
     Subscription<ItemPickUpEvent> item_pick_up_event_subscription;
     void Start()

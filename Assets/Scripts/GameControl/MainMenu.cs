@@ -21,7 +21,7 @@ public class MainMenu : MonoBehaviour
 
 	public void StartGame()
 	{
-		// TODO: get to know the language
+		// TODO: get to know the saved language
         SceneManager.LoadScene(startScene);
 	}
 
@@ -29,6 +29,11 @@ public class MainMenu : MonoBehaviour
 	{
 		Application.Quit();
 		Debug.Log("Quitting Game");
+	}
+
+	public void ContinueGame()
+	{
+		DataPersistenceManager.instance.LoadGame();
 	}
 
     

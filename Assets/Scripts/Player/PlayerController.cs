@@ -1,11 +1,13 @@
 using System.Collections;
 using System.Collections.Generic;
 using UnityEngine;
+using UnityEditor;
 
 public class PlayerController : MonoBehaviour
 {
     public static PlayerController instance;
-	public GameObject myInventory;
+	public BasicInventory inventory;
+	public GameObject myInventoryUI;
 	public KeyCode inventoryKey;
 
 	public float moveSpeed;
@@ -34,7 +36,7 @@ public class PlayerController : MonoBehaviour
 		if (!stopInput && !PauseMenu.instance.isPaused && !ChestController.instance.isOpen) {  
 			OpenInventory();
 
-			if (!myInventory.activeSelf)
+			if (!myInventoryUI.activeSelf)
 			{
 				float horizontalInput = Input.GetAxisRaw("Horizontal");
 				float verticalInput = Input.GetAxisRaw("Vertical");
@@ -90,7 +92,8 @@ public class PlayerController : MonoBehaviour
 	void OpenInventory() {
 		if (Input.GetKeyDown(inventoryKey))
 		{
-			myInventory.SetActive(!myInventory.activeSelf);
+			myInventoryUI.SetActive(!myInventoryUI.activeSelf);
+			InventoryController.RefreshItem();
 		}
 	}
 }

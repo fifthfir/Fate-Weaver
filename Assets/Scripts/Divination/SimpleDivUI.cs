@@ -63,7 +63,7 @@ public class SimpleDivUI : MonoBehaviour
 
     public void UseItem()
     {
-        if (inventory.UseItem(currItem.itemName))
+        if (inventory.UseItem(currItem))
         {
             //TODO publish simpleDivitem selected event upon usage for later confirmation
                 resultText.text = currItem.divResult;

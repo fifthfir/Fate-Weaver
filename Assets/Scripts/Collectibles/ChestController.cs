@@ -59,7 +59,7 @@ public class ChestController : MonoBehaviour
 
         if (isOpen)
         {
-            PlayerController.instance.myInventory.SetActive(false);
+            PlayerController.instance.myInventoryUI.SetActive(false);
             chestInventory.SetActive(true);
             playerInventory.SetActive(true);
         } else {

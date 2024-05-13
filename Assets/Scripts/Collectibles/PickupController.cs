@@ -8,7 +8,7 @@ public class PickupController : MonoBehaviour
     private bool isInRange;
     public Item currItem;
     public KeyCode pickupKey = KeyCode.E;
-    public BasicInventory inventory;
+    // public BasicInventory inventory;
     public GameObject pickupEffect;
 
     // Start is called before the first frame update
@@ -58,7 +58,7 @@ public class PickupController : MonoBehaviour
 
     private void AddNewItem() 
     {
-        inventory.AddItem(currItem);
+        PlayerController.instance.inventory.AddItem(currItem);
     }
 }
 
