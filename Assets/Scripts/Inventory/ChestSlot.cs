@@ -8,10 +8,9 @@ public class ChestSlot : MonoBehaviour
     public Item slotItem;
     public Image slotImage;
     public Text slotNum;
-    public BasicInventory chestInventory;
 
     public void ItemOnClicked() 
     {
-        chestInventory.UseItem(slotItem);
+        // ChestUIController.UseItem(slotItem);
     }
 }

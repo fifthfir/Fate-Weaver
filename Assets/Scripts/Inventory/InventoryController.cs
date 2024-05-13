@@ -20,12 +20,15 @@ public class InventoryController : MonoBehaviour
     private void OnEnable()
     {
         RefreshItem();
-        instance.itemInformation.text = "";
+        instance.itemInformation.text = "test";
     }
 
     public static void UpdateItemInfo(string itemDescription)
     {
+        Debug.Log("UpdateItemInfo");
+        Debug.Log(itemDescription);
         instance.itemInformation.text = itemDescription;
+        Debug.Log(instance.itemInformation.text);
     }
 
     public static void CreateNewItem(Item item)
