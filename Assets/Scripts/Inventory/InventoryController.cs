@@ -11,7 +11,7 @@ public class InventoryController : MonoBehaviour
     public GameObject slotGrid;
     public Slot slotPrefab;
     public Text itemInformation;
-
+    public bool isChesting;
     void Awake()
     {
         instance = this;
@@ -23,12 +23,9 @@ public class InventoryController : MonoBehaviour
         instance.itemInformation.text = "test";
     }
 
-    public static void UpdateItemInfo(string itemDescription)
+    public static void UpdateOnClick(Item item, BasicInventory slotInventory)
     {
-        Debug.Log("UpdateItemInfo");
-        Debug.Log(itemDescription);
-        instance.itemInformation.text = itemDescription;
-        Debug.Log(instance.itemInformation.text);
+        instance.itemInformation.text = item.itemDescription;
     }
 
     public static void CreateNewItem(Item item)
@@ -36,6 +33,7 @@ public class InventoryController : MonoBehaviour
         Slot newItem = Instantiate(instance.slotPrefab, instance.slotGrid.transform.position, Quaternion.identity);
         newItem.gameObject.transform.SetParent(instance.slotGrid.transform);
         newItem.slotItem = item;
+        newItem.slotInventory = instance.inventory;
         newItem.slotImage.sprite = item.icon;
         // newItem.slotNum.text = instance.inventory.InventoryDict[item.itemName].ToString();
         newItem.slotNum.text = instance.inventory.itemNumList[instance.inventory.itemList.IndexOf(item)].ToString();
@@ -43,9 +41,11 @@ public class InventoryController : MonoBehaviour
 
     public static void RefreshItem()
     {
+        Debug.Log("Refresh");
+
         for (int i = 0; i < instance.slotGrid.transform.childCount; i++)
         {
-            if (instance.slotGrid.transform.childCount == 0)
+            if (instance.slotGrid.transform.childCount <= 0)
             {
                 break;
             }
