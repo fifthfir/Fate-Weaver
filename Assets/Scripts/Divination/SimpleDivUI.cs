@@ -8,7 +8,6 @@ public class SimpleDivUI : MonoBehaviour
 {
     [Header("Public variables (Edit)")]
     public Item currItem;
-    public Inventory inventory;
     public TextMeshProUGUI resultText;
     public SimpleDivControl divControl;
 
@@ -23,11 +22,14 @@ public class SimpleDivUI : MonoBehaviour
     private Button curr_button;
     [SerializeField]
     private TextMeshProUGUI quantity_ui;
+    [SerializeField]
+    private Inventory inventory;
 
     public void Start()
     {
         curr_button = GetComponent<Button>();
         quantity_ui = GetComponentInChildren<TextMeshProUGUI>();
+        inventory = FindObjectOfType<Inventory>();
 
     }
 

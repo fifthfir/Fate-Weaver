@@ -44,3 +44,12 @@ public class MiniGameFailEvent
 {
     public MiniGameFailEvent() { }
 }
+
+public class StatChangeEvent
+{
+    public Stat stat;
+    public StatChangeEvent(Stat _stat)
+    {
+        stat = _stat;
+    }
+}
