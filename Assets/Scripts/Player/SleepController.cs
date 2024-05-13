@@ -5,7 +5,7 @@ using UnityEngine;
 public class SleepController : MonoBehaviour
 {
     private int dayCount;
-    public GameObject dayDisplay;
+    // public GameObject dayDisplay;
     private bool isInRange;
     public KeyCode sleepKey = KeyCode.E;
     // Start is called before the first frame update

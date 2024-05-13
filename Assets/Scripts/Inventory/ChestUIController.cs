@@ -16,10 +16,14 @@ public class ChestUIController : MonoBehaviour
     }
     private void OnEnable()
     {
-        foreach (var item in itemInChest)
+        if (itemInChest.Count > 0)
         {
-            CreateNewItem(item);
+            foreach (var item in itemInChest)
+            {
+                CreateNewItem(item);
+            }
         }
+        
     }
 
     // Start is called before the first frame update

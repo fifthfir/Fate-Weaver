@@ -40,6 +40,13 @@ public class DayCount : MonoBehaviour, IDataPersistence
 
     public void SaveData(ref GameData data)
     {
-        data.dayCount = this.dayCount;
+        Debug.Log("Day " + dayCount);
+        data.dayCount = dayCount;
     }
+    
+    // public void ResetData(ref GameData data)
+    // {
+    //     data.dayCount = 1;
+
+    // }
 }

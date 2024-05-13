@@ -14,6 +14,13 @@ public class BasicInventory : ScriptableObject
     [SerializeField]
     public List<int> itemNumList = new List<int>();
 
+    public void Clear()
+    {
+        itemList = new List<Item>();
+        InventoryDict = new Dictionary<string,int>();
+        itemNumList = new List<int>();
+    }
+    
     public void AddItem(Item item)
     {
         if (!itemList.Contains(item))
@@ -54,9 +61,6 @@ public class BasicInventory : ScriptableObject
 
         return false;
     }
-
-    
-
 }
 
 
