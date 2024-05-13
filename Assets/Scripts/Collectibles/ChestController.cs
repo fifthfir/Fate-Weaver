@@ -59,11 +59,13 @@ public class ChestController : MonoBehaviour
                 PlayerController.instance.myInventoryUI.SetActive(false);
                 chestInventory.SetActive(true);
                 playerInventory.SetActive(true);
-                // InventoryController.isChesting = true;
+
+                InventoryController.isChesting = true;
             } else {
                 chestInventory.SetActive(false);
                 playerInventory.SetActive(false);
-                // InventoryController.isChesting = false;
+                
+                InventoryController.isChesting = false;
 
             }
         }

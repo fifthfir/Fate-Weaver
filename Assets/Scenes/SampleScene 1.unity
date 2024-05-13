@@ -2702,6 +2702,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: fa5c298467ee84441a02a8e6514e410b, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
+  playerInventory: {fileID: 11400000, guid: 0f485ba87e9474c4e9858b86105de8c2, type: 2}
   inventory: {fileID: 11400000, guid: de4cfa8b7d3e93549ad05c0fd21f7af9, type: 2}
   slotGrid: {fileID: 1325403856}
   slotPrefab: {fileID: -60377150013495585, guid: 3310c192f0613594b8b15beb4aa6146f, type: 3}
@@ -9387,7 +9388,6 @@ MonoBehaviour:
   slotGrid: {fileID: 369708746}
   slotPrefab: {fileID: 3279979827242373061, guid: fe69fee354a494648b33148c6a341cb7, type: 3}
   itemInformation: {fileID: 2031310717}
-  isChesting: 1
 --- !u!1 &1325403856
 GameObject:
   m_ObjectHideFlags: 0

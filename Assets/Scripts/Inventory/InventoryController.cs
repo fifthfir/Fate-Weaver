@@ -14,7 +14,7 @@ public class InventoryController : MonoBehaviour
     public Slot slotPrefab;
     public Text itemInformation;
 
-    public bool isChesting;
+    public static bool isChesting = false;
 
     void Awake()
     {
@@ -29,9 +29,16 @@ public class InventoryController : MonoBehaviour
 
     public static void UpdateOnClick(Item item)
     {
-        // instance.itemInformation.text = item.itemDescription;
-        instance.inventory.UseItem(item);
-        instance.chest.AddItem(item);
+        if (isChesting)
+        {
+            instance.inventory.UseItem(item);
+            instance.chest.AddItem(item);
+        }
+        else 
+        {
+            instance.itemInformation.text = item.itemDescription;
+        }
+        
 
     }
 
