@@ -7,8 +7,7 @@ public class ChestUIController : MonoBehaviour
     static ChestUIController instance;
     public BasicInventory chestInventory;
     public GameObject slotGrid;
-    public Slot slotPrefab;
-    public List<Item> itemInChest = new List<Item>();
+    public ChestSlot slotPrefab;
     
     void Awake()
     {
@@ -40,7 +39,7 @@ public class ChestUIController : MonoBehaviour
 
     public static void CreateNewItem(Item item)
     {
-        Slot newItem = Instantiate(instance.slotPrefab, instance.slotGrid.transform.position, Quaternion.identity);
+        ChestSlot newItem = Instantiate(instance.slotPrefab, instance.slotGrid.transform.position, Quaternion.identity);
         newItem.gameObject.transform.SetParent(instance.slotGrid.transform);
         newItem.slotItem = item;
         newItem.slotImage.sprite = item.icon;

@@ -27,21 +27,24 @@ public class BasicInventory : ScriptableObject
         {
             itemList.Add(item);
             itemNumList.Add(1);
-        }
-        
-        if (InventoryDict.ContainsKey(item.itemName))
-        {
-            InventoryDict[item.itemName] += 1;
+        } else {
             itemNumList[itemList.IndexOf(item)]++;
         }
-        else
-        {
-            InventoryDict.Add(item.itemName, 1);
-        }
+
+        
+        // if (InventoryDict.ContainsKey(item.itemName))
+        // {
+        //     InventoryDict[item.itemName] += 1;
+        //     itemNumList[itemList.IndexOf(item)]++;
+        // }
+        // else
+        // {
+        //     InventoryDict.Add(item.itemName, 1);
+        // }
 
         InventoryController.RefreshItem();
 
-        Debug.Log($"{item.itemName}:{InventoryDict[item.itemName]}");
+        Debug.Log($"{item.itemName}:{itemNumList[itemList.IndexOf(item)]}");
     }
     
     public bool UseItem(Item item)
