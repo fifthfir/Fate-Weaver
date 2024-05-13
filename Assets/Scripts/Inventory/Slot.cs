@@ -12,7 +12,7 @@ public class Slot : MonoBehaviour
 
     public void ItemOnClicked() 
     {
-        InventoryController.UpdateOnClick(slotItem, slotInventory);
+        InventoryController.UpdateOnClick(slotItem);
     }
 
 }

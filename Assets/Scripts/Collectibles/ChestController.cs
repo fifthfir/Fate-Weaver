@@ -10,6 +10,7 @@ public class ChestController : MonoBehaviour
 
     public GameObject chestInventory;
     public GameObject playerInventory;
+    public Chest chest;
     public static ChestController instance;
 
 	public void Awake()

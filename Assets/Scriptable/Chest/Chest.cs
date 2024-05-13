@@ -22,6 +22,7 @@ public class Chest : ScriptableObject
         {
             itemNumList[itemList.IndexOf(item)]++;
         }
+        ChestUIController.RefreshItem();
     }
 
     public bool RemoveItem(Item item)
@@ -35,8 +36,11 @@ public class Chest : ScriptableObject
                 itemNumList.RemoveAt(index);
                 itemList.Remove(item);
             }
+            ChestUIController.RefreshItem();
             return true;
         }
+
+        ChestUIController.RefreshItem();
         return false;
     }
 }

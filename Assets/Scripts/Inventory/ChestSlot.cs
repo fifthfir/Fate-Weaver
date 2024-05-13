@@ -11,6 +11,6 @@ public class ChestSlot : MonoBehaviour
 
     public void ItemOnClicked() 
     {
-        // ChestUIController.UseItem(slotItem);
+        ChestUIController.UpdateOnClick(slotItem);
     }
 }

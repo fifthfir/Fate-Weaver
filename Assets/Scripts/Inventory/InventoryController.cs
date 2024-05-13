@@ -8,10 +8,14 @@ public class InventoryController : MonoBehaviour
 {
     static InventoryController instance;
     public BasicInventory inventory;
+    public Chest chest;
+
     public GameObject slotGrid;
     public Slot slotPrefab;
     public Text itemInformation;
+
     public bool isChesting;
+
     void Awake()
     {
         instance = this;
@@ -23,9 +27,12 @@ public class InventoryController : MonoBehaviour
         instance.itemInformation.text = "test";
     }
 
-    public static void UpdateOnClick(Item item, BasicInventory slotInventory)
+    public static void UpdateOnClick(Item item)
     {
-        instance.itemInformation.text = item.itemDescription;
+        // instance.itemInformation.text = item.itemDescription;
+        instance.inventory.UseItem(item);
+        instance.chest.AddItem(item);
+
     }
 
     public static void CreateNewItem(Item item)
@@ -43,14 +50,17 @@ public class InventoryController : MonoBehaviour
     {
         Debug.Log("Refresh");
 
-        for (int i = 0; i < instance.slotGrid.transform.childCount; i++)
-        {
-            if (instance.slotGrid.transform.childCount <= 0)
+        if (instance.slotGrid) {
+            for (int i = 0; i < instance.slotGrid.transform.childCount; i++)
             {
-                break;
+                if (instance.slotGrid.transform.childCount <= 0)
+                {
+                    break;
+                }
+                Destroy(instance.slotGrid.transform.GetChild(i).gameObject);
             }
-            Destroy(instance.slotGrid.transform.GetChild(i).gameObject);
         }
+        
 
         for (int i = 0; i < instance.inventory.itemList.Count; i++)
         {
