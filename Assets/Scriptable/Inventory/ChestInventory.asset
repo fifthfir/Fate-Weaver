@@ -12,4 +12,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2607128693725094bbe0cb37c3b59344, type: 3}
   m_Name: ChestInventory
   m_EditorClassIdentifier: 
-  itemList: []
+  itemList:
+  - {fileID: 11400000, guid: 0facf4030db9f4a0a974746103027013, type: 2}
+  - {fileID: 11400000, guid: 385d4d5fec3340845b8e5a318d6ea129, type: 2}
+  itemNumList: 0200000006000000

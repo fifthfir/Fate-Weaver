@@ -16,9 +16,9 @@ public class ChestUIController : MonoBehaviour
     }
     private void OnEnable()
     {
-        if (itemInChest.Count > 0)
+        if (chestInventory.itemList.Count > 0)
         {
-            foreach (var item in itemInChest)
+            foreach (var item in chestInventory.itemList)
             {
                 CreateNewItem(item);
             }
@@ -44,5 +44,6 @@ public class ChestUIController : MonoBehaviour
         newItem.gameObject.transform.SetParent(instance.slotGrid.transform);
         newItem.slotItem = item;
         newItem.slotImage.sprite = item.icon;
+        newItem.slotNum.text = instance.chestInventory.itemNumList[instance.chestInventory.itemList.IndexOf(item)].ToString();
     }
 }
