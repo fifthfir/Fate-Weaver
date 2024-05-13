@@ -10,12 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35e46307d6e2c4c2181d80e39b0e9823, type: 3}
-  m_Name: bay leaf
+  m_Name: mist stone
   m_EditorClassIdentifier: 
-  itemName: bay leaf
+  itemName: mist stone
   itemType: 0
-  description: This is a very goood description.
-  overworldSprite: {fileID: 0}
-  icon: {fileID: 21300000, guid: 8b2296cff9f914ad0b2753312d16790f, type: 3}
-  divResult: 'Temp: Go up north'
+  itemDescription: 
+  overworldSprite: {fileID: 21300000, guid: 540482410860a4d9c88ea44d3b626c79, type: 3}
+  icon: {fileID: 21300000, guid: 540482410860a4d9c88ea44d3b626c79, type: 3}
+  divResult: 
   associatedDivItems: []
+  collectSFX: 0

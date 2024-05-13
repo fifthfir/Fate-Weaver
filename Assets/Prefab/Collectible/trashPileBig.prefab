@@ -75,7 +75,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 487028175
-  m_SortingLayer: 3
+  m_SortingLayer: 4
   m_SortingOrder: 0
   m_Sprite: {fileID: -1600222382, guid: 9729a4925730c554d8af3d0f32f3387b, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -156,9 +156,8 @@ MonoBehaviour:
   currItem: {fileID: 0}
   inventory: {fileID: 0}
   prefabsToSpawn:
-  - {fileID: 3340155220701331225, guid: d628aed94bf762448a60f92fa8593e15, type: 3}
-  - {fileID: 3593279171860409862, guid: 2ff898cb461b14211bd7f272c11eac0b, type: 3}
-  - {fileID: 2989814553181244194, guid: 133b40d730f2944399a04cac89113c42, type: 3}
-  - {fileID: 6459213142118679208, guid: f64f197b7c72740498aac6c92f45391a, type: 3}
+  - {fileID: 116802890745698921, guid: af8f83e069fe64b358b82867663db39d, type: 3}
+  - {fileID: 116802890745698921, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
+  - {fileID: 116802890745698921, guid: cc5bafd4757ee4fde93aa965b49efc0b, type: 3}
   pickupKey: 101
   pickupEffect: {fileID: 0}

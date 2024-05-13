@@ -101,9 +101,9 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36c42e37fd22ff4ba3c2ac4c655c4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  isFlower: 1
   currItem: {fileID: 11400000, guid: 150558fe02ef74d398c874f7861d2fe0, type: 2}
   pickupKey: 101
+  inventory: {fileID: 11400000, guid: 0f485ba87e9474c4e9858b86105de8c2, type: 2}
   pickupEffect: {fileID: 0}
 --- !u!50 &116802890745698915
 Rigidbody2D:
