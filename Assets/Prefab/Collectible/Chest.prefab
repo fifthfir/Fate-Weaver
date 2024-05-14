@@ -28,7 +28,7 @@ Transform:
   m_PrefabInstance: {fileID: 0}
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 129626033991428678}
-  m_LocalRotation: {x: -0, y: -0, z: -0, w: 1}
+  m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
   m_LocalPosition: {x: -5.658658, y: 2.0961852, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
@@ -76,7 +76,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 487028175
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 1186353225, guid: ec763e5d392d1462a98b573bb50be479, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -104,7 +104,7 @@ MonoBehaviour:
   isOpen: 0
   chestInventory: {fileID: 0}
   playerInventory: {fileID: 0}
-  inventory: {fileID: 11400000, guid: db548fa51977d824aa2b3283ffa3e56e, type: 2}
+  chest: {fileID: 11400000, guid: de4cfa8b7d3e93549ad05c0fd21f7af9, type: 2}
 --- !u!58 &129626033991428680
 CircleCollider2D:
   m_ObjectHideFlags: 0

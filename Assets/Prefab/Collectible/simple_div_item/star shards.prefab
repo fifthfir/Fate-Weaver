@@ -77,7 +77,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 487028175
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: 1
   m_Sprite: {fileID: 21300000, guid: 392ad84535620408f8c744591427654a, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
@@ -103,7 +103,6 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   currItem: {fileID: 11400000, guid: 6d73abb0e1c16423e83c78ba183c2703, type: 2}
   pickupKey: 101
-  inventory: {fileID: 11400000, guid: 0f485ba87e9474c4e9858b86105de8c2, type: 2}
   pickupEffect: {fileID: 0}
 --- !u!50 &116802890745698915
 Rigidbody2D:
