@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class DayCount : MonoBehaviour, IDataPersistence
 {
-    private int dayCount = 0;
+    public int dayCount = 0;
     private Text dayCountText;
     public static DayCount instance;
     private void Awake()

@@ -11,7 +11,6 @@ public class TrashPilleBigController : MonoBehaviour
     private int itemAmount;
 
     public Item currItem;
-    public BasicInventory inventory;
     public GameObject[] prefabsToSpawn = new GameObject[3];
 
     public KeyCode pickupKey = KeyCode.E;
