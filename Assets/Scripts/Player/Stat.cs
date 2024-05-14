@@ -7,7 +7,7 @@ public class Stat
     public float minVal { get; set; }
     public float maxVal { get; set; }
     public float currVal { get; set; }
-    public float Ratio { get; set; }
+    private float Ratio;
 
     public Stat(string _name, float _minVal, float _maxVal, float _initialVal)
     {
@@ -65,5 +65,6 @@ public class Stat
         currVal = Mathf.Clamp(currVal, minVal, maxVal);
         Ratio = currVal / maxVal;
         // publish statChange event when clamp function is called
+        EventBus.Publish(new StatChangeEvent(this));
     }
 }

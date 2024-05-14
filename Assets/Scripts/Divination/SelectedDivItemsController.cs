@@ -182,7 +182,7 @@ public class SelectedDivItemsController : MonoBehaviour
         StartCoroutine(eraseText(3f));
         primary_item = null;
         secondary_item = null;
-        EventBus.Publish(new DivinationStartsEvent());
+        EventBus.Publish(new DivinationEvent(10,5));
     }
 
     IEnumerator eraseText(float duration)

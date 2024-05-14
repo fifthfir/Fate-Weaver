@@ -25,9 +25,17 @@ public class SimpleDivItemSelectionEvent
     }
 }
 
-public class DivinationStartsEvent
+/// <summary>
+/// Event for divniation, including proficiency level increase and soul points being consumed
+/// </summary>
+public class DivinationEvent
 {
-    public DivinationStartsEvent() { }
+    public float proficiencyIncrease;
+    public float soulPointsDecrease;
+    public DivinationEvent(float _increase,float _decrease) {
+        proficiencyIncrease = _increase;
+        soulPointsDecrease = _decrease;
+    }
 }
 
 public class MiniGamePerfectEvent
