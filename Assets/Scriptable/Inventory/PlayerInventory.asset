@@ -14,6 +14,5 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemList:
   - {fileID: 11400000, guid: 04b2a79426c4491488d54b5dd6dc9bef, type: 2}
-  - {fileID: 11400000, guid: 150558fe02ef74d398c874f7861d2fe0, type: 2}
-  - {fileID: 11400000, guid: 3e2ead78768dd4fdd9211decc77e07c0, type: 2}
-  - {fileID: 11400000, guid: 6d73abb0e1c16423e83c78ba183c2703, type: 2}
+  itemNumList: 01000000
+  isChest: 0
