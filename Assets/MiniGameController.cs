@@ -20,6 +20,7 @@ public class MiniGameController : MonoBehaviour
     public float perfectUpperbound = 14.5f;
     public float hitLowerbound = -44.5f ;
     public float hitUpperbound = 44.5f;
+    public NPCStats currNPCStats;
     // Start is called before the first frame update
     void Start()
     {

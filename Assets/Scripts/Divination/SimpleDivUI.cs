@@ -8,7 +8,6 @@ public class SimpleDivUI : MonoBehaviour
 {
     [Header("Public variables (Edit)")]
     public Item currItem;
-    public BasicInventory inventory;
     public TextMeshProUGUI resultText;
     public SimpleDivControl divControl;
 
@@ -23,11 +22,14 @@ public class SimpleDivUI : MonoBehaviour
     private Button curr_button;
     [SerializeField]
     private TextMeshProUGUI quantity_ui;
+    [SerializeField]
+    //private Inventory inventory;
 
     public void Start()
     {
         curr_button = GetComponent<Button>();
         quantity_ui = GetComponentInChildren<TextMeshProUGUI>();
+        inventory = FindObjectOfType<Inventory>();
 
     }
 
@@ -47,11 +49,11 @@ public class SimpleDivUI : MonoBehaviour
             }
             quantity = inventory.InventoryDict[currItem.itemName];
             quantity_ui.text = $"{quantity}";
-    
+
         }
 
         curr_button.interactable = hasItem;
-      
+
     }
 
     public void SelectItem()
@@ -66,7 +68,7 @@ public class SimpleDivUI : MonoBehaviour
         if (inventory.UseItem(currItem))
         {
             //TODO publish simpleDivitem selected event upon usage for later confirmation
-                resultText.text = currItem.divResult;
+            resultText.text = currItem.divResult;
         }
         StopAllCoroutines();
         StartCoroutine(ClearTextAfter(5f));
