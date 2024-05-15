@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: feather
   itemType: 0
-  itemDescription: 
+  itemDescription: a feather
   overworldSprite: {fileID: 21300000, guid: 40b445036f52b47a29f659503d13cc12, type: 3}
   icon: {fileID: 21300000, guid: 40b445036f52b47a29f659503d13cc12, type: 3}
   divResult: 

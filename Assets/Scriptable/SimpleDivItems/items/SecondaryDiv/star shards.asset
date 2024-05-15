@@ -14,7 +14,7 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: star
   itemType: 0
-  itemDescription: 
+  itemDescription: star
   overworldSprite: {fileID: 21300000, guid: 392ad84535620408f8c744591427654a, type: 3}
   icon: {fileID: 21300000, guid: 392ad84535620408f8c744591427654a, type: 3}
   divResult: 
