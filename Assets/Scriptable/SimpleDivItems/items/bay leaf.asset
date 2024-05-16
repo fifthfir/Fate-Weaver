@@ -10,13 +10,13 @@ MonoBehaviour:
   m_Enabled: 1
   m_EditorHideFlags: 0
   m_Script: {fileID: 11500000, guid: 35e46307d6e2c4c2181d80e39b0e9823, type: 3}
-  m_Name: tail of the mice
+  m_Name: bay leaf
   m_EditorClassIdentifier: 
-  itemName: tail of the mice
-  itemType: 1
-  itemDescription: tail of the mice
-  overworldSprite: {fileID: 21300000, guid: f8b92f65f45264d61a9a780bc5b6cbe9, type: 3}
-  icon: {fileID: 21300000, guid: f8b92f65f45264d61a9a780bc5b6cbe9, type: 3}
-  divResult: 
+  itemName: bay leaf
+  itemType: 0
+  itemDescription: bay leaf
+  overworldSprite: {fileID: 21300000, guid: 8b2296cff9f914ad0b2753312d16790f, type: 3}
+  icon: {fileID: 21300000, guid: 8b2296cff9f914ad0b2753312d16790f, type: 3}
+  divResult: 'Temp: Go up north'
   associatedDivItems: []
   collectSFX: 0
