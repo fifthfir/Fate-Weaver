@@ -48,6 +48,9 @@ TagManager:
   - name: grass
     uniqueID: 3661992905
     locked: 0
+  - name: shadow
+    uniqueID: 2722302657
+    locked: 0
   - name: Fence
     uniqueID: 3569206695
     locked: 0

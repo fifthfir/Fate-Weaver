@@ -10,21 +10,26 @@ public class Item : ScriptableObject
 {
     public string itemName;
     public ItemType itemType;
-    public string description;
+    [TextArea]
+    public string itemDescription;
     public Sprite overworldSprite;
     public Sprite icon;
     public string divResult;
+    public List<Item> associatedDivItems;
+    public int collectSFX;
+    // public AudioClip collectSFX;
     /* possible properties
     public GameObject divVFX;
     public AudioClip divSFX;
     public GameObject collectVFX;
-    public AudioClip collectSFX;*/
+    */
     /// Add additional properties and methods
 }
 
 public enum ItemType
 {
-    SimpleDivItem,
+    PrimaryDivItem,
+    SecondaryDivItem,
     CraftItem
     //TODO add more
 }

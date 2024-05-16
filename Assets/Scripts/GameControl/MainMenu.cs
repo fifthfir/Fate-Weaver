@@ -19,16 +19,25 @@ public class MainMenu : MonoBehaviour
 
     }
 
-	public void StartGame()
+	public void NewGame()
 	{
-		// TODO: get to know the language
-        SceneManager.LoadScene(startScene);
+		// TODO: get to know the saved language
+		DataPersistenceManager.instance.NewGame();
+		DataPersistenceManager.instance.SaveGame();
+		SceneManager.LoadScene(startScene);
 	}
 
 	public void QuitGame()
 	{
 		Application.Quit();
 		Debug.Log("Quitting Game");
+	}
+
+	public void ContinueGame()
+	{
+		SceneManager.LoadScene(startScene);
+		DataPersistenceManager.instance.LoadGame();
+		
 	}
 
     
