@@ -15,7 +15,7 @@ GameObject:
   - component: {fileID: 116802890745698912}
   - component: {fileID: 116802890745698913}
   m_Layer: 0
-  m_Name: star shards
+  m_Name: simple_div_pickup
   m_TagString: pickups
   m_Icon: {fileID: 0}
   m_NavMeshLayer: 0
@@ -29,7 +29,7 @@ Transform:
   m_PrefabAsset: {fileID: 0}
   m_GameObject: {fileID: 116802890745698921}
   m_LocalRotation: {x: 0, y: 0, z: 0, w: 1}
-  m_LocalPosition: {x: 1.54, y: -1.16, z: 0}
+  m_LocalPosition: {x: 0, y: 0, z: 0}
   m_LocalScale: {x: 1, y: 1, z: 1}
   m_ConstrainProportionsScale: 0
   m_Children:
@@ -78,7 +78,7 @@ SpriteRenderer:
   m_SortingLayerID: 487028175
   m_SortingLayer: 4
   m_SortingOrder: 1
-  m_Sprite: {fileID: 21300000, guid: 392ad84535620408f8c744591427654a, type: 3}
+  m_Sprite: {fileID: 21300000, guid: 40b445036f52b47a29f659503d13cc12, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
   m_FlipX: 0
   m_FlipY: 0
@@ -101,7 +101,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: b36c42e37fd22ff4ba3c2ac4c655c4f8, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  currItem: {fileID: 11400000, guid: 6d73abb0e1c16423e83c78ba183c2703, type: 2}
+  currItem: {fileID: 11400000, guid: 04b2a79426c4491488d54b5dd6dc9bef, type: 2}
   pickupKey: 101
   pickupEffect: {fileID: 0}
 --- !u!50 &116802890745698915
@@ -229,7 +229,7 @@ SpriteRenderer:
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 487028175
   m_SortingLayer: 4
-  m_SortingOrder: 0
+  m_SortingOrder: -1
   m_Sprite: {fileID: -2413806693520163455, guid: a86470a33a6bf42c4b3595704624658b, type: 3}
   m_Color: {r: 0, g: 0, b: 0, a: 0.36862746}
   m_FlipX: 0
