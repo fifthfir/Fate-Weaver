@@ -17,7 +17,7 @@ PrefabInstance:
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_LocalPosition.y
-      value: -8.699968
+      value: 0
       objectReference: {fileID: 0}
     - target: {fileID: 116802890745698914, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_LocalPosition.z
@@ -54,14 +54,14 @@ PrefabInstance:
     - target: {fileID: 116802890745698917, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Sprite
       value: 
-      objectReference: {fileID: 21300000, guid: bd00a82ce265043b0869f3798898e42d, type: 3}
+      objectReference: {fileID: 21300000, guid: 4475397c75d1d460dae95a99adfab2cb, type: 3}
     - target: {fileID: 116802890745698918, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: currItem
       value: 
-      objectReference: {fileID: 11400000, guid: 0facf4030db9f4a0a974746103027013, type: 2}
+      objectReference: {fileID: 11400000, guid: 150558fe02ef74d398c874f7861d2fe0, type: 2}
     - target: {fileID: 116802890745698921, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}
       propertyPath: m_Name
-      value: amber
+      value: seed of harvest
       objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: 083b4a3370f0d42ea9b574751bbdf9ee, type: 3}

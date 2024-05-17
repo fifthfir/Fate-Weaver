@@ -13,6 +13,6 @@ MonoBehaviour:
   m_Name: PlayerInventory
   m_EditorClassIdentifier: 
   itemList:
-  - {fileID: 11400000, guid: 04b2a79426c4491488d54b5dd6dc9bef, type: 2}
-  itemNumList: 01000000
+  - {fileID: 11400000, guid: 8b61afed5836f4682a66de587368d5cc, type: 2}
+  itemNumList: 02000000
   isChest: 0
