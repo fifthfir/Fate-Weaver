@@ -15,4 +15,11 @@ public class Slot : MonoBehaviour
         InventoryController.UpdateOnClick(slotItem);
     }
 
+    public void ItemOnDivined() 
+    {
+        Debug.Log("click");
+        InventoryController.instance.UpdateToDrop(slotItem);
+        Dropper.instance.ToDrop(slotItem);
+    }
+
 }

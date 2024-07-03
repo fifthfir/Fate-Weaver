@@ -6,7 +6,7 @@ using UnityEngine.UI;
 
 public class InventoryController : MonoBehaviour
 {
-    static InventoryController instance;
+    public static InventoryController instance;
     public BasicInventory inventory;
     public Chest chest;
 
@@ -38,18 +38,23 @@ public class InventoryController : MonoBehaviour
         {
             instance.itemInformation.text = item.itemDescription;
         }
-        
+    }
 
+    public void UpdateToDrop(Item item)
+    {
+        gameObject.SetActive(false);
     }
 
     public static void CreateNewItem(Item item)
     {
+        
+        Debug.Log(item.name);
+
         Slot newItem = Instantiate(instance.slotPrefab, instance.slotGrid.transform.position, Quaternion.identity);
         newItem.gameObject.transform.SetParent(instance.slotGrid.transform);
         newItem.slotItem = item;
         newItem.slotInventory = instance.inventory;
         newItem.slotImage.sprite = item.icon;
-        // newItem.slotNum.text = instance.inventory.InventoryDict[item.itemName].ToString();
         newItem.slotNum.text = instance.inventory.itemNumList[instance.inventory.itemList.IndexOf(item)].ToString();
     }
 
@@ -71,6 +76,7 @@ public class InventoryController : MonoBehaviour
 
         for (int i = 0; i < instance.inventory.itemList.Count; i++)
         {
+            Debug.Log(instance.inventory.itemList.Count);
             CreateNewItem(instance.inventory.itemList[i]);
         }
     }

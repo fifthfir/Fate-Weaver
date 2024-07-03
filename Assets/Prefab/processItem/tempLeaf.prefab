@@ -73,7 +73,7 @@ SpriteRenderer:
   m_AutoUVMaxAngle: 89
   m_LightmapParameters: {fileID: 0}
   m_SortingLayerID: 487028175
-  m_SortingLayer: 4
+  m_SortingLayer: 8
   m_SortingOrder: 0
   m_Sprite: {fileID: 21300000, guid: b717b95aa5270ba4ea21d2f798bd2513, type: 3}
   m_Color: {r: 1, g: 1, b: 1, a: 1}
@@ -98,9 +98,10 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: 2f8cf5815a738fb4fb0b57243978323a, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  mortarPosition: {fileID: 0}
-  originalPosition: {x: 0, y: 0, z: 0}
-  isOverMortar: 0
+  targetPosition: {fileID: 0}
+  powder: {fileID: 0}
+  originalPosition: {fileID: 0}
+  isOverTarget: 0
   proximityThreshold: 1
 --- !u!61 &3802331284693264685
 BoxCollider2D:

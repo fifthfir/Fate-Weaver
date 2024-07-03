@@ -4,23 +4,24 @@ using UnityEngine;
 
 public class Dropper : MonoBehaviour
 {
+    public static Dropper instance;
     public GameObject itemToDrop;
     public Transform tablePosition;
-    // Start is called before the first frame update
-    void Start()
-    {
-        StartCoroutine(Drop());
 
+    void Awake()
+    {
+        instance = this;
     }
-    
 
-    // Update is called once per frame
-    void Update()
+    public void ToDrop(Item item)
     {
+        itemToDrop.SetActive(true);
+        StartCoroutine(Drop(item));
     }
         
-    public IEnumerator Drop()
+    public IEnumerator Drop(Item item)
     {
+        itemToDrop.GetComponent<SpriteRenderer>().sprite = item.icon;
         float duration = 0.5f;
         Vector3 startPosition = itemToDrop.transform.position;
         Vector3 endPosition = tablePosition.position;
