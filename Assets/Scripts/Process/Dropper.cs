@@ -22,6 +22,8 @@ public class Dropper : MonoBehaviour
     public IEnumerator Drop(Item item)
     {
         itemToDrop.GetComponent<SpriteRenderer>().sprite = item.icon;
+        itemToDrop.name = item.itemName;
+        
         float duration = 0.5f;
         Vector3 startPosition = itemToDrop.transform.position;
         Vector3 endPosition = tablePosition.position;

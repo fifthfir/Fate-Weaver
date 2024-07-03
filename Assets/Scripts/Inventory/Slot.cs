@@ -9,6 +9,15 @@ public class Slot : MonoBehaviour
     public Image slotImage;
     public Text slotNum;
     public BasicInventory slotInventory;
+    public Text description;
+
+    public void Start()
+    {
+        if (description)
+        {
+            description.text = slotItem.itemDescription;
+        }
+    }
 
     public void ItemOnClicked() 
     {
@@ -20,6 +29,7 @@ public class Slot : MonoBehaviour
         Debug.Log("click");
         InventoryController.instance.UpdateToDrop(slotItem);
         Dropper.instance.ToDrop(slotItem);
+        InventoryController.instance.inventory.UseItem(slotItem);
     }
 
 }

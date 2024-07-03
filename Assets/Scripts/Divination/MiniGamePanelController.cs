@@ -16,7 +16,7 @@ public class MiniGamePanelController : MonoBehaviour
     Subscription<DivinationResultStringEvent> divination_result_subscriptoin;
     [SerializeField]
     private string resultDialogueNode = "";
-    public GameObject bayleaf;
+    public GameObject shelf;
     
     // Start is called before the first frame update
     void Start()
@@ -50,7 +50,7 @@ public class MiniGamePanelController : MonoBehaviour
     void RunMiniGame()
     {
         //OpenPanel();
-        bayleaf.SetActive(true);
+        shelf.SetActive(true);
     }
 
     public void StartQTE(QteStartEvent e)
