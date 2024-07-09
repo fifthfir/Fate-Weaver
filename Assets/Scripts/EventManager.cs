@@ -69,3 +69,51 @@ public class PickupEvent{
         proficiencyIncrease = _increase;
     }
 }
+
+public class HitZoneExitEvent
+{
+    public HitZoneExitEvent() { }
+}
+
+public class HitZoneResultEvent
+{
+    public string message;
+    public float accuracy;
+    public HitZoneResultEvent(string _message,float _accuracy)
+    {
+        message = _message;
+        accuracy = _accuracy;
+    }
+}
+
+public class QteStartEvent
+{
+    public QteStartEvent() { }
+}
+
+public class QteEndEvent
+{
+    public QteEndEvent(){}
+}
+
+public class DivinationResultIndexEvent
+{
+    public int index;
+    /* 0:perfet 
+     * 1:exerllent 
+     * 2:fair 
+     * 3:failure*/
+    public DivinationResultIndexEvent(int _index)
+    {
+        index = _index;
+    }
+}
+
+public class DivinationResultStringEvent
+{
+    public string nodeName;
+    public DivinationResultStringEvent(string _nodeName)
+    {
+        nodeName = _nodeName;
+    }
+}
