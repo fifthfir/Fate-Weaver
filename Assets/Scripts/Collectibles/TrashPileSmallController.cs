@@ -50,7 +50,7 @@ public class TrashPileSmallController : MonoBehaviour
             }
 
             //TODO: suggetion: it might help if we put pickup SFX & VFX as public variables of the Item scriptable class 
-            AudioManager.instance.PlaySFX(0);
+            LegacyAudioManager.instance.PlaySFX(0);
             Debug.Log("Item collected!");
         }
     }

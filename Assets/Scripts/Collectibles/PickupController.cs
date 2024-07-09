@@ -53,7 +53,7 @@ public class PickupController : MonoBehaviour
                 // Another inventory logic
                 AddNewItem();
 
-                AudioManager.instance.PlaySFX(currItem.collectSFX);
+                LegacyAudioManager.instance.PlaySFX(currItem.collectSFX);
             }
             Debug.Log("Item collected!");
         }
