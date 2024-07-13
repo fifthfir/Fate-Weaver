@@ -93,7 +93,6 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 7931439174125605678}
-  - component: {fileID: 1783235494981055605}
   m_Layer: 0
   m_Name: RunePanel
   m_TagString: Untagged
@@ -121,18 +120,6 @@ Transform:
   m_Father: {fileID: 8098589023372731005}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
---- !u!114 &1783235494981055605
-MonoBehaviour:
-  m_ObjectHideFlags: 0
-  m_CorrespondingSourceObject: {fileID: 0}
-  m_PrefabInstance: {fileID: 0}
-  m_PrefabAsset: {fileID: 0}
-  m_GameObject: {fileID: 981389620072833734}
-  m_Enabled: 1
-  m_EditorHideFlags: 0
-  m_Script: {fileID: 11500000, guid: f619bd306aabe4c448281a24612ac297, type: 3}
-  m_Name: 
-  m_EditorClassIdentifier: 
 --- !u!1 &1159396997494789427
 GameObject:
   m_ObjectHideFlags: 0
@@ -597,7 +584,7 @@ MonoBehaviour:
   m_Script: {fileID: 11500000, guid: f20cd456e244049f0846d5ee29992913, type: 3}
   m_Name: 
   m_EditorClassIdentifier: 
-  key: 32
+  key: 0
   view: {fileID: 8191832539487739591}
   canBeDiabledByPlayerInput: 0
   resultDialogueNode: 
@@ -695,6 +682,7 @@ GameObject:
   serializedVersion: 6
   m_Component:
   - component: {fileID: 8098589023372731005}
+  - component: {fileID: 8841231171693350621}
   m_Layer: 0
   m_Name: View
   m_TagString: Untagged
@@ -719,6 +707,26 @@ Transform:
   m_Father: {fileID: 3089664393626004020}
   m_RootOrder: 0
   m_LocalEulerAnglesHint: {x: 0, y: 0, z: 0}
+--- !u!114 &8841231171693350621
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 8191832539487739591}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: 3f71a1e3d93004ffd8cf3aba245821a4, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 
+  fmodEvent:
+    Guid:
+      Data1: -1063940100
+      Data2: 1177987454
+      Data3: -1559894852
+      Data4: 1416937401
+    Path: event:/Divination/Divination_Progress
+  pauseMusic: 1
 --- !u!1001 &5183852455353747163
 PrefabInstance:
   m_ObjectHideFlags: 0
@@ -778,6 +786,30 @@ PrefabInstance:
       propertyPath: m_SortingOrder
       value: 2
       objectReference: {fileID: 0}
+    - target: {fileID: 6334241659126581974, guid: f6b802a3199244b7e88468a14e357266, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.b
+      value: 0.8066038
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334241659126581974, guid: f6b802a3199244b7e88468a14e357266, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.g
+      value: 0.988366
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334241659126581974, guid: f6b802a3199244b7e88468a14e357266, type: 3}
+      propertyPath: m_Parameters.colorGradient.key0.r
+      value: 1
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334241659126581974, guid: f6b802a3199244b7e88468a14e357266, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.b
+      value: 0.11569952
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334241659126581974, guid: f6b802a3199244b7e88468a14e357266, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.g
+      value: 0.7022403
+      objectReference: {fileID: 0}
+    - target: {fileID: 6334241659126581974, guid: f6b802a3199244b7e88468a14e357266, type: 3}
+      propertyPath: m_Parameters.colorGradient.key1.r
+      value: 0.9811321
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6b802a3199244b7e88468a14e357266, type: 3}
 --- !u!4 &4616225040947780441 stripped
@@ -785,3 +817,20 @@ Transform:
   m_CorrespondingSourceObject: {fileID: 567627689302760834, guid: f6b802a3199244b7e88468a14e357266, type: 3}
   m_PrefabInstance: {fileID: 5183852455353747163}
   m_PrefabAsset: {fileID: 0}
+--- !u!1 &5427058175425728669 stripped
+GameObject:
+  m_CorrespondingSourceObject: {fileID: 909857966222792262, guid: f6b802a3199244b7e88468a14e357266, type: 3}
+  m_PrefabInstance: {fileID: 5183852455353747163}
+  m_PrefabAsset: {fileID: 0}
+--- !u!114 &566288783782875970
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 5427058175425728669}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: f619bd306aabe4c448281a24612ac297, type: 3}
+  m_Name: 
+  m_EditorClassIdentifier: 

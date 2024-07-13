@@ -123,4 +123,20 @@ public class AudioManager : MonoBehaviour
     {
         CleanUp();
     }
+
+    public void PauseMusic()
+    {
+        if (musicEventInstance.isValid())
+        {
+            musicEventInstance.setPaused(true);
+        }
+    }
+
+    public void ResumeMusic()
+    {
+        if (musicEventInstance.isValid())
+        {
+            musicEventInstance.setPaused(false);
+        }
+    }
 }
