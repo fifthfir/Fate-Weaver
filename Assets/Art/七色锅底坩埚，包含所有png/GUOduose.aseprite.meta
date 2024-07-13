@@ -1,0 +1,753 @@
+fileFormatVersion: 2
+guid: bfa8c20854daf4dd9b976ec67e562a9c
+ScriptedImporter:
+  internalIDToNameTable: []
+  externalObjects: {}
+  serializedVersion: 2
+  userData: 
+  assetBundleName: 
+  assetBundleVariant: 
+  script: {fileID: 11500000, guid: 62a9f0aa5b59740cfbadc7e5f9823bb0, type: 3}
+  textureImporterSettings:
+    alphaSource: 1
+    mipMapMode: 0
+    enableMipMap: 0
+    fadeOut: 0
+    borderMipMap: 0
+    mipMapsPreserveCoverage: 0
+    alphaTestReferenceValue: 0.5
+    mipMapFadeDistanceStart: 1
+    mipMapFadeDistanceEnd: 3
+    convertToNormalMap: 0
+    heightScale: 0.25
+    normalMapFilter: 0
+    isReadable: 0
+    streamingMipmaps: 0
+    streamingMipmapsPriority: 0
+    vTOnly: 0
+    ignoreMasterTextureLimit: 0
+    nPOTScale: 1
+    sRGBTexture: 1
+    spriteMode: 2
+    spriteExtrude: 1
+    spriteMeshType: 1
+    alignment: 0
+    spritePivot: {x: 0.5, y: 0.5}
+    spritePixelsToUnits: 100
+    spriteBorder: {x: 0, y: 0, z: 0, w: 0}
+    spriteGenerateFallbackPhysicsShape: 0
+    generateCubemap: 6
+    cubemapConvolution: 0
+    seamlessCubemap: 0
+    alphaIsTransparency: 1
+    spriteTessellationDetail: -1
+    textureType: 8
+    textureShape: 1
+    singleChannelComponent: 0
+    flipbookRows: 0
+    flipbookColumns: 0
+    ignorePngGamma: 0
+    cookieMode: 0
+    filterMode: 0
+    aniso: 1
+    mipBias: 0
+    wrapU: 1
+    wrapV: 1
+    wrapW: 1
+    normalMap: 0
+    textureFormat: 0
+    maxTextureSize: 0
+    lightmap: 0
+    compressionQuality: 0
+    linearTexture: 0
+    grayScaleToAlpha: 0
+    rGBM: 0
+    cubemapConvolutionSteps: 0
+    cubemapConvolutionExponent: 0
+    maxTextureSizeSet: 0
+    compressionQualitySet: 0
+    textureFormatSet: 0
+    applyGammaDecoding: 0
+  previousAsepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  asepriteImporterSettings:
+    fileImportMode: 1
+    importHiddenLayers: 0
+    layerImportMode: 1
+    defaultPivotSpace: 0
+    defaultPivotAlignment: 7
+    customPivotPosition: {x: 0.5, y: 0.5}
+    mosaicPadding: 4
+    spritePadding: 0
+    generateModelPrefab: 1
+    generateAnimationClips: 1
+    addSortingGroup: 1
+    addShadowCasters: 0
+  importFileNodeState: 1
+  platformSettingsDirtyTick: 0
+  textureAssetName: 
+  singleSpriteImportData:
+  - name: 
+    originalName: 
+    pivot: {x: 0, y: 0}
+    alignment: 0
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 0
+      y: 0
+      width: 0
+      height: 0
+    spriteID: 
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 0, y: 0}
+  animatedSpriteImportData:
+  - name: GUOduose_Frame_0
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 216
+      width: 74
+      height: 96
+    spriteID: 102f362ca93984856a2a83f4894a3778
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 216}
+  - name: GUOduose_Frame_1
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 320
+      width: 74
+      height: 96
+    spriteID: 3824326392c6f4cf4828717730a783a9
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 320}
+  - name: GUOduose_Frame_2
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 4
+      width: 74
+      height: 96
+    spriteID: 0b0d5d185be84465a8f275ad74c67487
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 4}
+  - name: GUOduose_Frame_3
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 108
+      width: 74
+      height: 96
+    spriteID: d709502a702ee4dceb92a5671c08b7ec
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 108}
+  - name: GUOduose_Frame_4
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 212
+      width: 74
+      height: 96
+    spriteID: 54264bbf594004f618419d68f91e155c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 212}
+  - name: GUOduose_Frame_5
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 168
+      y: 316
+      width: 74
+      height: 96
+    spriteID: dbcb4ca52ce5b45a1bb939a1d865533e
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 168, y: 316}
+  - name: GUOduose_Frame_6
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 250
+      y: 4
+      width: 74
+      height: 96
+    spriteID: e8ad6947f651b406191a2a6ce5555f00
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 250, y: 4}
+  - name: GUOduose_Frame_7
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 250
+      y: 108
+      width: 74
+      height: 96
+    spriteID: 9eea77035df6d4a24a9f29213d7ac357
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 250, y: 108}
+  - name: GUOduose_Frame_8
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 250
+      y: 212
+      width: 74
+      height: 96
+    spriteID: e059e9e5039204e4684fc571a2e8d0a1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 250, y: 212}
+  - name: GUOduose_Frame_9
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 250
+      y: 316
+      width: 74
+      height: 96
+    spriteID: 2759152723fe34997bbec4a68c5dc69c
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 250, y: 316}
+  - name: GUOduose_Frame_10
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 4
+      width: 74
+      height: 96
+    spriteID: dc0c4f5112f704b0bbaf389807224689
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 4}
+  - name: GUOduose_Frame_11
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 108
+      width: 74
+      height: 96
+    spriteID: fa606196b4992410bacbbaf0bab2db04
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 108}
+  - name: GUOduose_Frame_12
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 212
+      width: 74
+      height: 96
+    spriteID: e97fe1ee97ba749af8560272207c5bc1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 212}
+  - name: GUOduose_Frame_13
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 332
+      y: 316
+      width: 74
+      height: 96
+    spriteID: 5d8107910b2b24d048e388c5cac1b836
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 332, y: 316}
+  - name: GUOduose_Frame_14
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 414
+      y: 4
+      width: 74
+      height: 96
+    spriteID: 73a0e31f3f94c4ea3944a085a470cc25
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 414, y: 4}
+  - name: GUOduose_Frame_15
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020833334}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 414
+      y: 108
+      width: 74
+      height: 96
+    spriteID: b0c0cb57d1bd844a9ba7b856c05ab935
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 414, y: 108}
+  - name: GUOduose_Frame_16
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020408165}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 327
+      width: 74
+      height: 98
+    spriteID: 2f2a208f5963a42729eb6405523113b5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 327}
+  - name: GUOduose_Frame_17
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.02020202}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 113
+      width: 74
+      height: 99
+    spriteID: 097300e115d0f48f59a915f99f87eab0
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 113}
+  - name: GUOduose_Frame_18
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.019801982}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 4
+      width: 74
+      height: 101
+    spriteID: e8b5a15ad044c424fae318b51b0e1dd5
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 4}
+  - name: GUOduose_Frame_19
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020408165}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 4
+      width: 74
+      height: 98
+    spriteID: 615489fd5918247bd9926927757bc3db
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 4}
+  - name: GUOduose_Frame_20
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.020408165}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 86
+      y: 110
+      width: 74
+      height: 98
+    spriteID: 47e61d8f656664f698dc9fdd2b0f27cd
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 86, y: 110}
+  - name: GUOduose_Frame_21
+    originalName: 
+    pivot: {x: 0.47297293, y: -0.02020202}
+    alignment: 9
+    border: {x: 0, y: 0, z: 0, w: 0}
+    rect:
+      serializedVersion: 2
+      x: 4
+      y: 220
+      width: 74
+      height: 99
+    spriteID: ef60f907c2b0e481499787ee418d75b1
+    spriteBone: []
+    spriteOutline: []
+    vertices: []
+    spritePhysicsOutline: []
+    indices: 
+    edges: []
+    tessellationDetail: 0
+    uvTransform: {x: 4, y: 220}
+  spriteSheetImportData: []
+  asepriteLayers:
+  - layerIndex: 0
+    guid: 1938901645
+    name: GUOduose
+    layerFlags: 0
+    layerType: 0
+    blendMode: 0
+    cells:
+    - name: GUOduose_Frame_0
+      frameIndex: 0
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: 102f362ca93984856a2a83f4894a3778
+    - name: GUOduose_Frame_1
+      frameIndex: 1
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: 3824326392c6f4cf4828717730a783a9
+    - name: GUOduose_Frame_2
+      frameIndex: 2
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: 0b0d5d185be84465a8f275ad74c67487
+    - name: GUOduose_Frame_3
+      frameIndex: 3
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: d709502a702ee4dceb92a5671c08b7ec
+    - name: GUOduose_Frame_4
+      frameIndex: 4
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: 54264bbf594004f618419d68f91e155c
+    - name: GUOduose_Frame_5
+      frameIndex: 5
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: dbcb4ca52ce5b45a1bb939a1d865533e
+    - name: GUOduose_Frame_6
+      frameIndex: 6
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: e8ad6947f651b406191a2a6ce5555f00
+    - name: GUOduose_Frame_7
+      frameIndex: 7
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: 9eea77035df6d4a24a9f29213d7ac357
+    - name: GUOduose_Frame_8
+      frameIndex: 8
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: e059e9e5039204e4684fc571a2e8d0a1
+    - name: GUOduose_Frame_9
+      frameIndex: 9
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: 2759152723fe34997bbec4a68c5dc69c
+    - name: GUOduose_Frame_10
+      frameIndex: 10
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: dc0c4f5112f704b0bbaf389807224689
+    - name: GUOduose_Frame_11
+      frameIndex: 11
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: fa606196b4992410bacbbaf0bab2db04
+    - name: GUOduose_Frame_12
+      frameIndex: 12
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: e97fe1ee97ba749af8560272207c5bc1
+    - name: GUOduose_Frame_13
+      frameIndex: 13
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: 5d8107910b2b24d048e388c5cac1b836
+    - name: GUOduose_Frame_14
+      frameIndex: 14
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: 73a0e31f3f94c4ea3944a085a470cc25
+    - name: GUOduose_Frame_15
+      frameIndex: 15
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 96
+      spriteId: b0c0cb57d1bd844a9ba7b856c05ab935
+    - name: GUOduose_Frame_16
+      frameIndex: 16
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 98
+      spriteId: 2f2a208f5963a42729eb6405523113b5
+    - name: GUOduose_Frame_17
+      frameIndex: 17
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 99
+      spriteId: 097300e115d0f48f59a915f99f87eab0
+    - name: GUOduose_Frame_18
+      frameIndex: 18
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 101
+      spriteId: e8b5a15ad044c424fae318b51b0e1dd5
+    - name: GUOduose_Frame_19
+      frameIndex: 19
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 98
+      spriteId: 615489fd5918247bd9926927757bc3db
+    - name: GUOduose_Frame_20
+      frameIndex: 20
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 98
+      spriteId: 47e61d8f656664f698dc9fdd2b0f27cd
+    - name: GUOduose_Frame_21
+      frameIndex: 21
+      cellRect:
+        x: 13
+        y: 2
+        width: 74
+        height: 99
+      spriteId: ef60f907c2b0e481499787ee418d75b1
+    linkedCells: []
+    parentIndex: -1
+  platformSettings: []
+  generatePhysicsShape: 0
+  secondarySpriteTextures: []
+  spritePackingTag: 
+  canvasSize: {x: 96, y: 112}
