@@ -774,6 +774,10 @@ PrefabInstance:
       propertyPath: m_Name
       value: RuneView
       objectReference: {fileID: 0}
+    - target: {fileID: 6334241659126581974, guid: f6b802a3199244b7e88468a14e357266, type: 3}
+      propertyPath: m_SortingOrder
+      value: 2
+      objectReference: {fileID: 0}
     m_RemovedComponents: []
   m_SourcePrefab: {fileID: 100100000, guid: f6b802a3199244b7e88468a14e357266, type: 3}
 --- !u!4 &4616225040947780441 stripped
