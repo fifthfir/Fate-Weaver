@@ -11,6 +11,8 @@ public class ItemDragger : MonoBehaviour
     public bool isOverTarget = false;
     private bool isSelected;
     public float proximityThreshold = 1.0f;
+    public Animator animator;
+    public float grindingDuration;
 
     void Start()
     {
@@ -47,19 +49,50 @@ public class ItemDragger : MonoBehaviour
         if (Vector3.Distance(transform.position, targetPosition.position) < proximityThreshold)
         {
             Debug.Log("Into target!");
-            Destroy(gameObject);
-            if (powder)
-            {
-                powder.SetActive(true);
-                powder.name = this.name;
-                // TODO: add powder's item name
-            } else {
-                // pot list add this item
-                PotController.instance.AddIngre(this.name);
-            }
-        } else
+            
+            StartCoroutine(GrindItem());
+        } 
+        else
         {
             transform.position = originalPosition.position;
+        }
+    }
+
+    private IEnumerator GrindItem()
+    {
+        if (animator)
+        {
+            animator.SetTrigger("Grind"); // Trigger the grinding animation
+        }
+
+        Debug.Log("Grind begin");
+        Debug.Log("Grinding duration: " + grindingDuration);
+
+        Renderer renderer = gameObject.GetComponent<Renderer>();
+        renderer.enabled = false;
+        
+        yield return new WaitForSeconds(grindingDuration); // Wait for the animation to finish
+
+        Debug.Log("Grind Done");
+
+        if (animator)
+        {
+            animator.SetBool("isDone", true); // Trigger the grinding animation
+            Debug.Log("Grind trigger Done");
+        }
+
+        Destroy(gameObject);
+
+        if (powder)
+        {
+            powder.SetActive(true);
+            powder.name = this.name;
+            // TODO: add powder's item name
+        }
+        else
+        {
+            // pot list add this item
+            PotController.instance.AddIngre(this.name);
         }
     }
 }

@@ -50,7 +50,7 @@ public class MiniGamePanelController : MonoBehaviour
     void RunMiniGame()
     {
         //OpenPanel();
-        shelf.SetActive(true);
+        // shelf.SetActive(true);
     }
 
     public void StartQTE(QteStartEvent e)
