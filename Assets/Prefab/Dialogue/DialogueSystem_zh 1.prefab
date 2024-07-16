@@ -951,6 +951,10 @@ PrefabInstance:
       value: Line View
       objectReference: {fileID: 0}
     - target: {fileID: 8994626609354372327, guid: 3ee7fb667b29245e4afc17615c602b82, type: 3}
+      propertyPath: typewriterEffectSpeed
+      value: 20
+      objectReference: {fileID: 0}
+    - target: {fileID: 8994626609354372327, guid: 3ee7fb667b29245e4afc17615c602b82, type: 3}
       propertyPath: onCharacterTyped.m_PersistentCalls.m_Calls.Array.size
       value: 1
       objectReference: {fileID: 0}
