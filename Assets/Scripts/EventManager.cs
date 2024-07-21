@@ -72,7 +72,10 @@ public class PickupEvent{
 
 public class HitZoneExitEvent
 {
-    public HitZoneExitEvent() { }
+    public Transform hitZoneTransform;
+    public HitZoneExitEvent(Transform _hitZoneTransfrom) {
+        hitZoneTransform = _hitZoneTransfrom;
+    }
 }
 
 public class HitZoneResultEvent

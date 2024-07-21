@@ -10,15 +10,21 @@ public class FollowThePath : MonoBehaviour
     public TextMeshProUGUI resultText;
     public bool reverserPath = false;
     public float hitThreshold = 0.1f; // Threshold distance to consider a hit
+    public GameObject path;
+    public bool endQTEAfterCompletion = false; // this should be set to true if the rune has a unsegmented path/if this is the last segment
+    public bool pauseOrbAfterHit = false; // set to true if no lines should be drawn after player hit
+    public float travelTime = 6f; // for sychronizing with music
+    public float initialDelay; // the order of which the line will be drawn for a segmented rune
+
     // Array of waypoints to walk from one to the next one
     [SerializeField]
-    private GameObject[] waypoints;
+    private Transform[] waypoints;
 
     // Walk speed that can be set in Inspector
     [SerializeField]
-    private float move_speed = 2f;
+    private float move_speed;
 
-    // Index of current waypoint from which Enemy walks
+    // Index of current waypoint from which the orb moves to the next one
     // to the next one
     private int waypoint_index = 0;
 
@@ -28,6 +34,7 @@ public class FollowThePath : MonoBehaviour
 
     private bool hit_pressed = false;
 
+    [SerializeField]
     private Transform curr_hit_zone_transform;
 
     Subscription<HitZoneExitEvent> exit_hit_zone_event_subscription;
@@ -35,19 +42,7 @@ public class FollowThePath : MonoBehaviour
     // Use this for initialization
     private void Start()
     {
-        waypoints = GameObject.FindGameObjectsWithTag("waypoint");
-        exit_hit_zone_event_subscription = EventBus.Subscribe<HitZoneExitEvent>(OnHitZoneExit);
-        //initialize orb position
-        if (!reverserPath)
-        {
-            transform.position = waypoints[waypoint_index].transform.position;
-        }
-
-        else
-        {
-            transform.position = waypoints[waypoints.Length - 1].transform.position;
-            waypoint_index = waypoints.Length - 1;
-        }
+        StartCoroutine(InitialDelay());
 
     }
 
@@ -66,6 +61,14 @@ public class FollowThePath : MonoBehaviour
                GameObject hitMark =  Instantiate(hitPrefab, GetComponentInParent<Transform>().position, Quaternion.identity);
                 hitMark.transform.parent = this.gameObject.transform.parent;
                 ready_to_hit = false;
+
+                /* extra logic for handling pausing orb after hit for segmented runes*/
+                if (pauseOrbAfterHit)
+                {
+                    can_move = false;
+                }
+                /* end */
+
                 CheckHit();
             }
         }
@@ -86,7 +89,7 @@ public class FollowThePath : MonoBehaviour
         {
             ready_to_hit = false;
             //Publish Exit Event for calling checkhit
-            EventBus.Publish(new HitZoneExitEvent());
+            EventBus.Publish(new HitZoneExitEvent(curr_hit_zone_transform));
         }
     }
 
@@ -116,7 +119,12 @@ public class FollowThePath : MonoBehaviour
             else
             {
                 can_move = false;
-                EventBus.Publish(new QteEndEvent());
+                // end qte and calculate final results if this is the only or the last line segment
+                if (endQTEAfterCompletion)
+                {
+                    EventBus.Publish(new QteEndEvent());
+                    Debug.Log("QTE end not reverse");
+                }
             }
         }
 
@@ -125,6 +133,7 @@ public class FollowThePath : MonoBehaviour
             if(waypoint_index > 0)
             {
                 can_move = true;
+                // end qte and calculate final results if this is the only or the last line segment
                 transform.position = Vector3.MoveTowards(transform.position,
                     waypoints[waypoint_index].transform.position,
                     move_speed * Time.deltaTime);
@@ -132,7 +141,10 @@ public class FollowThePath : MonoBehaviour
             else
             {
                 can_move = false;
-                EventBus.Publish(new QteEndEvent());
+                if (endQTEAfterCompletion)
+                {
+                    EventBus.Publish(new QteEndEvent());
+                }
             }
 
             if(transform.position == waypoints[waypoint_index].transform.position)
@@ -175,11 +187,57 @@ public class FollowThePath : MonoBehaviour
     void OnHitZoneExit(HitZoneExitEvent e)
     {
         string curr_result = "";
-        if (!hit_pressed)
+        if (curr_hit_zone_transform == e.hitZoneTransform)
         {
-            Debug.Log("Missed!");
-            curr_result = "Miss!";
-            EventBus.Publish(new HitZoneResultEvent(curr_result,0));
+            if (!hit_pressed)
+            {
+                Debug.Log("Missed!");
+                curr_result = "Miss!";
+                EventBus.Publish(new HitZoneResultEvent(curr_result, 0));
+            }
         }
+    }
+
+    private IEnumerator InitialDelay()
+    {
+        can_move = false;
+        yield return new WaitForSeconds(initialDelay);
+
+        /* Get Waypoints */
+        //waypoints = GameObject.FindGameObjectsWithTag("waypoint");
+        Transform[] allTransforms = path.GetComponentsInChildren<Transform>(true);
+
+        // Filter out the parent transform
+        Transform parentTransform = path.transform;
+        Transform[] childTransforms = System.Array.FindAll(allTransforms, t => t != parentTransform);
+        waypoints = childTransforms;
+
+        /*End*/
+
+        exit_hit_zone_event_subscription = EventBus.Subscribe<HitZoneExitEvent>(OnHitZoneExit);
+
+        // Calculate the total distance from the first waypoint to the last waypoint
+        float totalDistance = 0f;
+        for (int i = 0; i < waypoints.Length - 1; i++)
+        {
+            totalDistance += Vector3.Distance(waypoints[i].transform.position, waypoints[i + 1].transform.position);
+        }
+
+        // Calculate the move speed based on the total distance and the total travel time
+        move_speed = totalDistance / travelTime;
+
+        // Initialize orb position
+        if (!reverserPath)
+        {
+            transform.position = waypoints[waypoint_index].transform.position;
+        }
+        else
+        {
+            transform.position = waypoints[waypoints.Length - 1].transform.position;
+            waypoint_index = waypoints.Length - 1;
+        }
+
+        // Start moving
+        can_move = true;
     }
 }

@@ -12,13 +12,16 @@ public class HitZoneResultUI : MonoBehaviour
     Subscription<QteEndEvent> qte_end_subscription;
     [SerializeField]
     List<float> resultList;
-    float overallAccuracy;
+    [SerializeField]
+    private float overallAccuracy;
 
     private void Start()
     {
         textMeshPro = GetComponent<TextMeshProUGUI>();
         hit_zone_result_subscription = EventBus.Subscribe<HitZoneResultEvent>(UpdateResultUI);
         qte_end_subscription = EventBus.Subscribe<QteEndEvent>(ShowFinalResult);
+        overallAccuracy = 0f;
+        textMeshPro.text = "";
     }
 
     void UpdateResultUI(HitZoneResultEvent e)
@@ -38,6 +41,7 @@ public class HitZoneResultUI : MonoBehaviour
         foreach (float result in resultList)
         {
             overallAccuracy += result;
+            Debug.Log("Added up accurary" + overallAccuracy);
         }
 
         overallAccuracy /= resultList.Count;
