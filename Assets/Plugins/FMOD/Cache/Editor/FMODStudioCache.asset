@@ -1,0 +1,965 @@
+%YAML 1.1
+%TAG !u! tag:unity3d.com,2011:
+--- !u!114 &-8595898537024795340
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Divination/Sigil_Ink_Dipping
+  m_EditorClassIdentifier: 
+  Path: event:/Divination/Sigil_Ink_Dipping
+  Guid:
+    Data1: -1563217516
+    Data2: 1180654158
+    Data3: 400759204
+    Data4: 923619428
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 299
+--- !u!114 &-7844610916604894900
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Player/Dialogue_Going
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Player/Dialogue_Going
+  Guid:
+    Data1: 1977025992
+    Data2: 1274041411
+    Data3: -1139476807
+    Data4: -1096350579
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2000
+--- !u!114 &-7413929299126729014
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UI_Cancel
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UI_Cancel
+  Guid:
+    Data1: 1036750052
+    Data2: 1146767035
+    Data3: 1359525261
+    Data4: 1670034699
+  Banks:
+  - {fileID: 534130061177257413}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 148
+--- !u!114 &-5058441070967221605
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Item_Drop_to_Table/Item_Material
+  m_EditorClassIdentifier: 
+  Name: Item_Material
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 986060343
+    data2: 3259879651
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Crops
+  - Herb
+  - Gem
+  Exists: 1
+--- !u!114 &-3867590415016262190
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Player/Dialogue_Start
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Player/Dialogue_Start
+  Guid:
+    Data1: -393678618
+    Data2: 1155384783
+    Data3: 715338408
+    Data4: 1423616627
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 118
+--- !u!114 &-3341844872690004707
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Divination/Divination_Result_Average
+  m_EditorClassIdentifier: 
+  Path: event:/Divination/Divination_Result_Average
+  Guid:
+    Data1: 121386791
+    Data2: 1202799961
+    Data3: -139103822
+    Data4: 234115508
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2622
+--- !u!114 &-2598085761057596578
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Character/Player/Dialogue_End
+  m_EditorClassIdentifier: 
+  Path: event:/Character/Player/Dialogue_End
+  Guid:
+    Data1: 1855755213
+    Data2: 1195788343
+    Data3: 584578736
+    Data4: -1479003428
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 91
+--- !u!114 &-2580208890983243805
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Gameplay/UI_Page_Trun
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Gameplay/UI_Page_Trun
+  Guid:
+    Data1: 1254122405
+    Data2: 1318493988
+    Data3: 62055816
+    Data4: 1482481768
+  Banks:
+  - {fileID: 534130061177257413}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 785
+--- !u!114 &-2140152153471135150
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Divination_Progress/Qte_Hit_or_Not
+  m_EditorClassIdentifier: 
+  Name: Qte_Hit_or_Not
+  StudioPath: 
+  Min: 0
+  Max: 1
+  Default: 0
+  ID:
+    data1: 3614414819
+    data2: 4269901940
+  Type: 1
+  IsGlobal: 0
+  Labels: []
+  Exists: 1
+--- !u!114 &-1834913998422716964
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: fecb8ef7f94ca804a8ab72049b86782e, type: 3}
+  m_Name: parameter:/Item_Place_to_Grinder/Item_Material
+  m_EditorClassIdentifier: 
+  Name: Item_Material
+  StudioPath: 
+  Min: 0
+  Max: 2
+  Default: 0
+  ID:
+    data1: 986060343
+    data2: 3259879651
+  Type: 2
+  IsGlobal: 0
+  Labels:
+  - Crops
+  - Herb
+  - Gem
+  Exists: 1
+--- !u!114 &-1614566564103969889
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UI_Confirm
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UI_Confirm
+  Guid:
+    Data1: -1268080448
+    Data2: 1268198442
+    Data3: 1936039324
+    Data4: 483930802
+  Banks:
+  - {fileID: 534130061177257413}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 193
+--- !u!114 &-433166948083143202
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UI_Close
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UI_Close
+  Guid:
+    Data1: -660159311
+    Data2: 1100950696
+    Data3: -1518015569
+    Data4: -1233642566
+  Banks:
+  - {fileID: 534130061177257413}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 114
+--- !u!114 &-330086026116256558
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/UI.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Desktop/Fate Weaver Demo Audio 01/Build/Desktop/UI.bank
+  Name: UI
+  StudioPath: bank:/UI
+  lastModified: 638557370910000000
+  FileSizes:
+  - Name: Desktop
+    Value: 7936
+  Exists: 1
+--- !u!114 &-119858492165835815
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Divination/Divination_Result_Perfect
+  m_EditorClassIdentifier: 
+  Path: event:/Divination/Divination_Result_Perfect
+  Guid:
+    Data1: 2144805059
+    Data2: 1225558088
+    Data3: 341349562
+    Data4: 975671822
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2533
+--- !u!114 &-35053733713664
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.strings.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Desktop/Fate Weaver Demo Audio 01/Build/Desktop/Master.strings.bank
+  Name: Master.strings
+  StudioPath: bank:/Master.strings
+  lastModified: 638560326440000000
+  FileSizes:
+  - Name: Desktop
+    Value: 2610
+  Exists: 1
+--- !u!114 &11400000
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: d32cf7c32a3ed8347bac48ef5ed56d82, type: 3}
+  m_Name: FMODStudioCache
+  m_EditorClassIdentifier: 
+  EditorBanks:
+  - {fileID: -35053733713664}
+  - {fileID: 534130061177257413}
+  - {fileID: 3661638083101976846}
+  - {fileID: 5583307363414258255}
+  - {fileID: -330086026116256558}
+  EditorEvents:
+  - {fileID: 8241414775713936422}
+  - {fileID: -2580208890983243805}
+  - {fileID: -433166948083143202}
+  - {fileID: 5882071289095046998}
+  - {fileID: -1614566564103969889}
+  - {fileID: 7863813213219304216}
+  - {fileID: 3177598265673973367}
+  - {fileID: -7413929299126729014}
+  - {fileID: 253085730822571890}
+  - {fileID: 3865924570470537754}
+  - {fileID: 6847672637655183494}
+  - {fileID: 1429645347073994766}
+  - {fileID: -3341844872690004707}
+  - {fileID: 758366828777537347}
+  - {fileID: 958289200607026738}
+  - {fileID: 6568920271731852443}
+  - {fileID: 2263804362248410911}
+  - {fileID: 2762290176801473351}
+  - {fileID: -8595898537024795340}
+  - {fileID: -119858492165835815}
+  - {fileID: 6495868918254936981}
+  - {fileID: -7844610916604894900}
+  - {fileID: -2598085761057596578}
+  - {fileID: 2573702393117575564}
+  - {fileID: -3867590415016262190}
+  - {fileID: 3812750516419769211}
+  - {fileID: 6871771949419717510}
+  EditorParameters: []
+  MasterBanks:
+  - {fileID: 534130061177257413}
+  StringsBanks:
+  - {fileID: -35053733713664}
+  cacheTime: 638560326460000000
+  cacheVersion: 131618
+--- !u!114 &253085730822571890
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Gameplay/UI_Book_Close
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Gameplay/UI_Book_Close
+  Guid:
+    Data1: 383910635
+    Data2: 1294298717
+    Data3: 1515941524
+    Data4: 1482525968
+  Banks:
+  - {fileID: 534130061177257413}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 756
+--- !u!114 &534130061177257413
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Master.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Desktop/Fate Weaver Demo Audio 01/Build/Desktop/Master.bank
+  Name: Master
+  StudioPath: bank:/Master
+  lastModified: 638560326440000000
+  FileSizes:
+  - Name: Desktop
+    Value: 75296
+  Exists: 1
+--- !u!114 &758366828777537347
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Divination/Divination_Start
+  m_EditorClassIdentifier: 
+  Path: event:/Divination/Divination_Start
+  Guid:
+    Data1: 898340411
+    Data2: 1263277711
+    Data3: -2099957097
+    Data4: -1410965428
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3533
+--- !u!114 &958289200607026738
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/Amb_Point/Candle_Burning_01
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/Amb_Point/Candle_Burning_01
+  Guid:
+    Data1: 1441575762
+    Data2: 1104389918
+    Data3: 416813235
+    Data4: -454346533
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 4000
+--- !u!114 &1429645347073994766
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Divination/Item_Drop_to_Table
+  m_EditorClassIdentifier: 
+  Path: event:/Divination/Item_Drop_to_Table
+  Guid:
+    Data1: 558809100
+    Data2: 1073884973
+    Data3: -1817037917
+    Data4: -870115363
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -5058441070967221605}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &2263804362248410911
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/Amb_Point/Cauldron_Bubbling
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/Amb_Point/Cauldron_Bubbling
+  Guid:
+    Data1: -1796179335
+    Data2: 1183369926
+    Data3: 48051884
+    Data4: -1934132769
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 5980
+--- !u!114 &2573702393117575564
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Divination/Divination_Result_Failed
+  m_EditorClassIdentifier: 
+  Path: event:/Divination/Divination_Result_Failed
+  Guid:
+    Data1: 736845791
+    Data2: 1227047106
+    Data3: -1363093586
+    Data4: -848548534
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1500
+--- !u!114 &2762290176801473351
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Divination/Item_Place_to_Grinder
+  m_EditorClassIdentifier: 
+  Path: event:/Divination/Item_Place_to_Grinder
+  Guid:
+    Data1: -1585091437
+    Data2: 1122576165
+    Data3: -742598765
+    Data4: 1609305219
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -1834913998422716964}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 0
+--- !u!114 &3177598265673973367
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UI_Click
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UI_Click
+  Guid:
+    Data1: 2083593429
+    Data2: 1117309982
+    Data3: 1425499287
+    Data4: 1232847103
+  Banks:
+  - {fileID: 534130061177257413}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 312
+--- !u!114 &3661638083101976846
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/Music.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Desktop/Fate Weaver Demo Audio 01/Build/Desktop/Music.bank
+  Name: Music
+  StudioPath: bank:/Music
+  lastModified: 638560326460000000
+  FileSizes:
+  - Name: Desktop
+    Value: 1437120
+  Exists: 1
+--- !u!114 &3812750516419769211
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Divination/Divination_Progress
+  m_EditorClassIdentifier: 
+  Path: event:/Divination/Divination_Progress
+  Guid:
+    Data1: -1063940100
+    Data2: 1177987454
+    Data3: -1559894852
+    Data4: 1416937401
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 1
+  Parameters:
+  - {fileID: -2140152153471135150}
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 21951
+--- !u!114 &3865924570470537754
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Music/Music_TentBackground
+  m_EditorClassIdentifier: 
+  Path: event:/Music/Music_TentBackground
+  Guid:
+    Data1: 876394919
+    Data2: 1149137060
+    Data3: -296038996
+    Data4: -937879486
+  Banks:
+  - {fileID: 3661638083101976846}
+  IsStream: 1
+  Is3D: 0
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 107560
+--- !u!114 &5583307363414258255
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: c18180ecb35941f4682ae60107b85b7c, type: 3}
+  m_Name: bank:/SFX.bank
+  m_EditorClassIdentifier: 
+  Path: ../../Desktop/Fate Weaver Demo Audio 01/Build/Desktop/SFX.bank
+  Name: SFX
+  StudioPath: bank:/SFX
+  lastModified: 638557364970000000
+  FileSizes:
+  - Name: Desktop
+    Value: 937632
+  Exists: 1
+--- !u!114 &5882071289095046998
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UI_Hover
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UI_Hover
+  Guid:
+    Data1: 1977744056
+    Data2: 1268668681
+    Data3: 1465204111
+    Data4: 1729273739
+  Banks:
+  - {fileID: 534130061177257413}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 121
+--- !u!114 &6495868918254936981
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Environment/Amb_Point/Candle_Burning_02
+  m_EditorClassIdentifier: 
+  Path: event:/Environment/Amb_Point/Candle_Burning_02
+  Guid:
+    Data1: -427727161
+    Data2: 1201346305
+    Data3: -1468328267
+    Data4: 646188428
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 0
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 3415
+--- !u!114 &6568920271731852443
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Divination/Divination_Result_Excellent
+  m_EditorClassIdentifier: 
+  Path: event:/Divination/Divination_Result_Excellent
+  Guid:
+    Data1: 780532567
+    Data2: 1115788482
+    Data3: 1487313569
+    Data4: 122643096
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 2553
+--- !u!114 &6847672637655183494
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/Divination/Powder_Drop_to_Cauldron
+  m_EditorClassIdentifier: 
+  Path: event:/Divination/Powder_Drop_to_Cauldron
+  Guid:
+    Data1: -1061701625
+    Data2: 1142142649
+    Data3: -781761377
+    Data4: -564948750
+  Banks:
+  - {fileID: 5583307363414258255}
+  IsStream: 0
+  Is3D: 1
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 545
+--- !u!114 &6871771949419717510
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/UI_Item_Move
+  m_EditorClassIdentifier: 
+  Path: event:/UI/UI_Item_Move
+  Guid:
+    Data1: 492363026
+    Data2: 1098669242
+    Data3: -1873409103
+    Data4: -269194927
+  Banks:
+  - {fileID: -330086026116256558}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 113
+--- !u!114 &7863813213219304216
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Gameplay/UI_Book_Open
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Gameplay/UI_Book_Open
+  Guid:
+    Data1: -706176044
+    Data2: 1224453344
+    Data3: 1626236588
+    Data4: 639852211
+  Banks:
+  - {fileID: 534130061177257413}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 1195
+--- !u!114 &8241414775713936422
+MonoBehaviour:
+  m_ObjectHideFlags: 0
+  m_CorrespondingSourceObject: {fileID: 0}
+  m_PrefabInstance: {fileID: 0}
+  m_PrefabAsset: {fileID: 0}
+  m_GameObject: {fileID: 0}
+  m_Enabled: 1
+  m_EditorHideFlags: 0
+  m_Script: {fileID: 11500000, guid: ceb653cd98e289a4e8697a1af55201f2, type: 3}
+  m_Name: event:/UI/Gameplay/UI_Book_Sigil_Select
+  m_EditorClassIdentifier: 
+  Path: event:/UI/Gameplay/UI_Book_Sigil_Select
+  Guid:
+    Data1: 1827130268
+    Data2: 1260247071
+    Data3: 247863212
+    Data4: 192089625
+  Banks:
+  - {fileID: 534130061177257413}
+  IsStream: 0
+  Is3D: 0
+  IsOneShot: 1
+  Parameters: []
+  MinDistance: 1
+  MaxDistance: 20
+  Length: 687

@@ -10,6 +10,9 @@ public class SelectedDivItemsController : MonoBehaviour
     public GameObject selectedDivItemIconPrefab;
     public GameObject secondaryDivView;
     public TextMeshProUGUI divResult;
+    public BasicInventory playerInventory;
+    public bool isNPCDiv = false;
+    public MiniGamePanelController miniGamePanelController;
 
     [Header("Private Variables")]
     [SerializeField]
@@ -22,15 +25,12 @@ public class SelectedDivItemsController : MonoBehaviour
     private GameObject secondary_icon;
     [SerializeField]
     private Button[] secondary_buttons;
-    [SerializeField]
-    private Inventory player_inventory;
     
     // Start is called before the first frame update
     void Start()
     {
         simple_div_item_selection_event = EventBus.Subscribe<SimpleDivItemSelectionEvent>(OnItemSelection);
         secondary_buttons = secondaryDivView.GetComponentsInChildren<Button>();
-        player_inventory = FindObjectOfType<Inventory>();
     }
 
     private void Update()
@@ -154,35 +154,45 @@ public class SelectedDivItemsController : MonoBehaviour
 
     public void StartsDivination()
     {
+        StopAllCoroutines();
         if(primary_item != null)
         {
-            player_inventory.UseItem(primary_item.itemName);
+            playerInventory.UseItem(primary_item);
             DestroyImmediate(primary_icon, true);
         }
 
         if(secondary_item != null)
         {
-            player_inventory.UseItem(secondary_item.itemName);
+            playerInventory.UseItem(secondary_item);
             DestroyImmediate(secondary_icon, true);
         }
 
-        if(primary_item != null && secondary_item == null)
+        if (!isNPCDiv)
         {
-            Debug.Log($"Simple div with {primary_item} selected");
-            divResult.text = primary_item.divResult;
+
+            if (primary_item != null && secondary_item == null)
+            {
+                Debug.Log($"Simple div with {primary_item} selected");
+                divResult.text = primary_item.divResult;
+            }
+
+            else
+            {
+                Debug.Log($"Simple div with {primary_item} and {secondary_item} selected");
+                divResult.text = " This is a temp placeholder text";
+            }
         }
 
-        else
+        /*if (isNPCDiv)
         {
-            Debug.Log($"Simple div with {primary_item} and {secondary_item} selected");
-            divResult.text = " This is a temp placeholder text";
-        }
+            miniGamePanelController.RunMiniGame();
+        }*/
        
        
         StartCoroutine(eraseText(3f));
         primary_item = null;
         secondary_item = null;
-        EventBus.Publish(new DivinationStartsEvent());
+        EventBus.Publish(new DivinationEvent(10,5));
     }
 
     IEnumerator eraseText(float duration)

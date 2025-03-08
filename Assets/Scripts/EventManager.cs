@@ -25,9 +25,17 @@ public class SimpleDivItemSelectionEvent
     }
 }
 
-public class DivinationStartsEvent
+/// <summary>
+/// Event for divniation, including proficiency level increase and soul points being consumed
+/// </summary>
+public class DivinationEvent
 {
-    public DivinationStartsEvent() { }
+    public float proficiencyIncrease;
+    public float soulPointsDecrease;
+    public DivinationEvent(float _increase,float _decrease) {
+        proficiencyIncrease = _increase;
+        soulPointsDecrease = _decrease;
+    }
 }
 
 public class MiniGamePerfectEvent
@@ -43,4 +51,72 @@ public class MiniGameHitEvent
 public class MiniGameFailEvent
 {
     public MiniGameFailEvent() { }
+}
+
+public class StatChangeEvent
+{
+    public Stat stat;
+    public StatChangeEvent(Stat _stat)
+    {
+        stat = _stat;
+    }
+}
+
+public class PickupEvent{
+    public float proficiencyIncrease;
+    public PickupEvent(float _increase)
+    {
+        proficiencyIncrease = _increase;
+    }
+}
+
+public class HitZoneExitEvent
+{
+    public Transform hitZoneTransform;
+    public HitZoneExitEvent(Transform _hitZoneTransfrom) {
+        hitZoneTransform = _hitZoneTransfrom;
+    }
+}
+
+public class HitZoneResultEvent
+{
+    public string message;
+    public float accuracy;
+    public HitZoneResultEvent(string _message,float _accuracy)
+    {
+        message = _message;
+        accuracy = _accuracy;
+    }
+}
+
+public class QteStartEvent
+{
+    public QteStartEvent() { }
+}
+
+public class QteEndEvent
+{
+    public QteEndEvent(){}
+}
+
+public class DivinationResultIndexEvent
+{
+    public int index;
+    /* 0:perfet 
+     * 1:exerllent 
+     * 2:fair 
+     * 3:failure*/
+    public DivinationResultIndexEvent(int _index)
+    {
+        index = _index;
+    }
+}
+
+public class DivinationResultStringEvent
+{
+    public string nodeName;
+    public DivinationResultStringEvent(string _nodeName)
+    {
+        nodeName = _nodeName;
+    }
 }

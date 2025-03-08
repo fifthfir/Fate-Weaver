@@ -19,11 +19,13 @@ public class MainMenu : MonoBehaviour
 
     }
 
-	public void StartGame()
-	{
-		// TODO: get to know the language
-        SceneManager.LoadScene(startScene);
-	}
+	// public void NewGame(int saveSlot)
+	// {
+	// 	Debug.Log("" + saveSlot);
+	// 	DataPersistenceManager.instance.NewGame(saveSlot);
+	// 	DataPersistenceManager.instance.SaveGame();
+	// 	SceneManager.LoadScene(startScene);
+	// }
 
 	public void QuitGame()
 	{
@@ -31,5 +33,13 @@ public class MainMenu : MonoBehaviour
 		Debug.Log("Quitting Game");
 	}
 
-    
+	public void ContinueGame(int saveSlot)
+	{
+		
+		DataPersistenceManager.instance.LoadGame(saveSlot);
+		SceneManager.LoadScene(startScene);
+
+		// DataPersistenceManager.instance.SaveGame();
+
+	}
 }

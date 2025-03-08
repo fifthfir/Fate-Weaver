@@ -6,11 +6,12 @@ public class SimpleDivControl : MonoBehaviour
 {
     public KeyCode key;
     public GameObject view;
+    public GameObject NPCDivView;
     public SelectedDivItemsController divItemsController;
     // Start is called before the first frame update
     void Start()
     {
-        
+        closeSimpleDivPanel();
     }
 
     // Update is called once per frame
@@ -42,4 +43,12 @@ public class SimpleDivControl : MonoBehaviour
         divItemsController.ResetSelection();
         view.SetActive(false);
     }
+
+    /*void ShowNPCDivView(NPCDivinationEvent e)
+    {
+        NPCDivView.SetActive(true);
+        view.SetActive(false);
+        //Populate npcInfo 
+        NPCDivView.GetComponent<CharInfoEntryController>().ShowCurrNPCInfo(e.currProfile);
+    }*/
 }

@@ -14,8 +14,9 @@ MonoBehaviour:
   m_EditorClassIdentifier: 
   itemName: bay leaf
   itemType: 0
-  description: This is a very goood description.
-  overworldSprite: {fileID: 0}
+  itemDescription: bay leaf
+  overworldSprite: {fileID: 21300000, guid: 719e833850bdfd14abdb5bcc3ba68217, type: 3}
   icon: {fileID: 21300000, guid: 8b2296cff9f914ad0b2753312d16790f, type: 3}
   divResult: 'Temp: Go up north'
   associatedDivItems: []
+  collectSFX: 0
